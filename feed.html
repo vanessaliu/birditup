@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bird it up!</title>
+	<meta charset="utf8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+       <!-- Navbar -->
+    <div class="navbar navbar-fixed-top">
+      <div class="container">
+
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand text-muted" href="index.html">Bird it up</a>
+        <div class="collapse navbar-collapse">
+
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Hem</a></li>
+            <li><a href="index.html#vinst">Vinst</a></li>
+            <li><a href="index.html#inspiration">Inspiration</a></li>
+            <li><a href="index.html#regler">Regler</a></li>
+            <li><a href="index.html#instagram">Instagram</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    <!-- End navbar -->
+    <!-- Instagram-->
+    <div class="container-fluid instagram" id="instagram">
+        <div id="fullfeed"></div> 
+        <div id="load-more"></div>
+    </div>
+    <!-- End Instagram-->
+    
+
+</body>
+</html>

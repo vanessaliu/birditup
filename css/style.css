@@ -1,0 +1,198 @@
+/*colors*/
+/*#626261*/
+/* Root
+**************************************/
+/* line 13, ../scss/style.scss */
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+/* General
+**************************************/
+/* line 21, ../scss/style.scss */
+.container-fluid {
+  text-align: center;
+  padding: 60px 0 120px 0;
+}
+/* line 24, ../scss/style.scss */
+.container-fluid p {
+  padding: 0px 300px;
+}
+
+/* line 29, ../scss/style.scss */
+h2 {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: 'Playfair Display', serif;
+  color: #404040;
+}
+
+/* line 36, ../scss/style.scss */
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #404040;
+  font-weight: 300;
+}
+
+/* line 43, ../scss/style.scss */
+.section-line {
+  height: 1px;
+  width: 200px;
+  border-bottom: 1px solid #61666d;
+  text-align: center;
+  margin: 20px auto 40px auto;
+  padding: 20px 0;
+}
+
+/* Navigation
+**************************************/
+/* line 56, ../scss/style.scss */
+.navbar {
+  background-color: white;
+  border: 0;
+}
+
+/* line 61, ../scss/style.scss */
+.icon-bar {
+  background: #404040;
+}
+
+/* line 67, ../scss/style.scss */
+.navbar-collapse ul li a {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #404040;
+}
+
+/* Tävling
+**************************************/
+/* line 77, ../scss/style.scss */
+.tavling {
+  background: transparent url(../img/tavling.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 1000px;
+  background-position: top center;
+  display: table;
+  height: 100%;
+  padding-top: 80px;
+}
+
+/* line 87, ../scss/style.scss */
+.mybutton {
+  background-color: rgba(98, 98, 97, 0.8);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  margin: 40px 20px;
+  border-radius: 0;
+  box-shadow: 0;
+  border: 0;
+  text-transform: uppercase;
+  transition: all 200ms ease;
+}
+/* line 99, ../scss/style.scss */
+.mybutton:hover {
+  background-color: rgba(85, 85, 84, 0.8);
+}
+
+/* Regler
+**************************************/
+/* line 105, ../scss/style.scss */
+.regler {
+  background: transparent url(../img/regler.jpg);
+  background-repeat: repeat;
+  padding: 0;
+}
+/* line 112, ../scss/style.scss */
+.regler ol {
+  margin: 0 auto;
+  max-width: 600px;
+}
+/* line 115, ../scss/style.scss */
+.regler ol li {
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  padding: 10px 0;
+}
+/* line 121, ../scss/style.scss */
+.regler p {
+  padding: 60px 200px;
+}
+
+/* line 125, ../scss/style.scss */
+.reglerbg {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 60px;
+  padding: 60px;
+}
+
+/* Vinst
+**************************************/
+/* line 133, ../scss/style.scss */
+.vinst {
+  background-color: #f8f8f8;
+  min-height: 700px;
+}
+
+/* line 137, ../scss/style.scss */
+img {
+  width: 200px;
+  height: 200px;
+  border: 15px solid white;
+  margin-top: 30px;
+}
+
+/* Inspiration
+**************************************/
+/* line 146, ../scss/style.scss */
+.inspiration {
+  background-color: #efefef;
+  min-height: 700px;
+}
+
+/* Instagram
+**************************************/
+/* line 153, ../scss/style.scss */
+.instagram {
+  background-color: #efefef;
+  min-height: 700px;
+}
+
+/* Footer
+**************************************/
+/* line 160, ../scss/style.scss */
+.footer {
+  background: transparent url(../img/footerbg.jpg);
+  background-repeat: repeat;
+}
+/* line 164, ../scss/style.scss */
+.footer p {
+  padding-bottom: 20px;
+}
+/* line 167, ../scss/style.scss */
+.footer .footertext {
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  /* line 3, ../scss/_responsive.scss */
+  .container-fluid p {
+    padding: 0px 150px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  /* line 11, ../scss/_responsive.scss */
+  .container-fluid p {
+    padding: 0px 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 19, ../scss/_responsive.scss */
+  .container-fluid p {
+    padding: 0px 50px;
+  }
+}

@@ -1,0 +1,186 @@
+@import "base";
+
+
+// TODO:
+// - Make navigation centered
+// - Add Instagram & Inspiration when we know content
+// -
+
+
+// LAURA: Added root, need body & html 100% so that display: table works
+/* Root
+**************************************/
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+/* General
+**************************************/
+// LAURA: Added text-align center and padding
+.container-fluid {
+    text-align: center;
+    padding: 60px 0 120px 0;
+    p {
+        padding: 0px 300px;
+    }
+}
+// LAURA: Changed all headlines to h2 since it has same styling
+h2 {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    color: $textcolor;
+}
+// LAURA: Added styling to p since it is same
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: $textcolor;
+    font-weight: 300;
+}
+
+.section-line {
+    height: 1px;
+    width: 200px;
+    // LAURA: Changed to border-bottom, seemed to work better than the background
+    border-bottom: 1px solid $sectionline;
+    // LAURA: Added center, padding + margin
+    text-align: center;
+    margin: 20px auto 40px auto;
+    padding: 20px 0;
+}
+/* Navigation
+**************************************/
+// LAURA: Made white like in design, should it be dark instead?
+.navbar {
+    background-color: white;
+    border: 0;
+}
+// LAURA: Added color to the menu button when bg white
+.icon-bar {
+    background: $textcolor;
+}
+// LAURA: Added text styling to the navigation
+.navbar-collapse {
+    ul {
+        li a {
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            color: $textcolor;
+        }
+    }
+}
+/* Tävling
+**************************************/
+// LAURA: Changed background settings a bit so the image shows, added overlay to the image so text more visible
+.tavling {
+	background: transparent url(../img/tavling.jpg);
+	background-repeat: no-repeat;
+	background-size: auto 1000px;
+    background-position: top center;
+    // LAURA: Added display table to element! It makes the element equally high as the users screen, love it
+    display: table;
+    height: 100%;
+	padding-top: 80px;
+}
+.mybutton {
+	background-color: $lightblack;
+	color: $white;
+    font-family: 'Roboto', sans-serif;
+    // LAURA: Added some styling to the buttons & hover:
+    padding: 20px;
+    margin: 40px 20px;
+    border-radius: 0;
+    box-shadow: 0;
+    border: 0;
+    text-transform: uppercase;
+    transition: all 200ms ease;
+    &:hover {
+        background-color: darken($lightblack, 5%);
+    }
+}
+/* Regler
+**************************************/
+.regler {
+    // LAURA: Added the pattern so it can repeat
+    // ändrade till bakgrunden som finns i design (vilken borde vi ha?)
+	background: transparent url(../img/regler.jpg);
+	background-repeat: repeat;
+    padding: 0;
+    // LAURA: Added styling directly to the list
+    ol {
+        margin: 0 auto;
+        max-width: 600px;
+        li {
+            font-size: 30px;
+            font-family: 'Playfair Display', serif;
+            padding: 10px 0;
+        }
+    }
+    p {
+        padding: 60px 200px;
+    }
+}
+.reglerbg {
+	background-color:$lightwhite;
+	margin: 60px;
+    padding: 60px;
+}
+
+/* Vinst
+**************************************/
+.vinst {
+	background-color: $lightgray;
+	min-height: 700px;
+}
+img {
+	width: 200px;
+	height: 200px;
+	border: 15px solid $white;
+	margin-top: 30px;
+}
+
+/* Inspiration
+**************************************/
+.inspiration {
+	background-color: $verylightgray;
+	min-height: 700px;
+}
+
+/* Instagram
+**************************************/
+.instagram {
+	background-color: $verylightgray;
+	min-height: 700px;
+
+    .fb-like {
+        // TODO: fix styling for voting button
+    }
+}
+#instagram {
+    .grid-image {
+        float: left;
+        img {
+            width: 306px;
+            height: 306px;
+        }
+    }
+}
+/* Footer
+**************************************/
+.footer {
+    // LAURA: Added the pattern so it can repeat
+	background: transparent url(../img/footerbg.jpg);
+	background-repeat: repeat;
+    p {
+        padding-bottom: 20px;
+    }
+    .footertext {
+    	font-size: 30px;
+    	font-family: 'Playfair Display', serif;
+    	margin-top: 80px;
+    }
+}
+
+@import "responsive";
