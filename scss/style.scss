@@ -1,13 +1,6 @@
 @import "base";
 
 
-// TODO:
-// - Make navigation centered
-// - Add Instagram & Inspiration when we know content
-// -
-
-
-// LAURA: Added root, need body & html 100% so that display: table works
 /* Root
 **************************************/
 body, html {
@@ -18,7 +11,6 @@ body, html {
 
 /* General
 **************************************/
-// LAURA: Added text-align center and padding
 .section {
     text-align: center;
     padding: 60px 0 120px 0;
@@ -26,14 +18,12 @@ body, html {
         padding: 0px 300px;
     }
 }
-// LAURA: Changed all headlines to h2 since it has same styling
 h2 {
     text-transform: uppercase;
     font-size: 60px;
     font-family: 'Playfair Display', serif;
     color: $textcolor;
 }
-// LAURA: Added styling to p since it is same
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
@@ -44,9 +34,7 @@ p {
 .section-line {
     height: 1px;
     width: 200px;
-    // LAURA: Changed to border-bottom, seemed to work better than the background
     border-bottom: 1px solid $sectionline;
-    // LAURA: Added center, padding + margin
     text-align: center;
     margin: 20px auto 40px auto;
     padding: 20px 0;
@@ -61,7 +49,8 @@ header {
     left: 0;
     right: 0;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+    z-index: 9000;
 }
 .header-navigation {
     nav {
@@ -81,46 +70,26 @@ header {
     }
 }
 
-// .navbar {
-//     background-color: white;
-//     border: 0;
-// }
-// // LAURA: Added color to the menu button when bg white
-// .icon-bar {
-//     background: $textcolor;
-// }
-// // LAURA: Added text styling to the navigation
-// .navbar-collapse {
-//     ul {
-//         li a {
-//             font-family: 'Roboto', sans-serif;
-//             text-transform: uppercase;
-//             color: $textcolor;
-//         }
-//     }
-// }
 /* Tävling
 **************************************/
-// LAURA: Changed background settings a bit so the image shows, added overlay to the image so text more visible
 .tavling {
 	background: transparent url(../img/tavling.jpg);
 	background-repeat: no-repeat;
 	background-size: auto 1000px;
     background-position: top center;
-    // LAURA: Added display table to element! It makes the element equally high as the users screen, love it
     display: table;
     height: 100%;
 	padding-top: 100px;
 }
-.mybutton {
+.button {
 	background-color: $lightblack;
-	color: $white;
+    color: $white;
     font-family: 'Roboto', sans-serif;
-    // LAURA: Added some styling to the buttons & hover:
+    font-size: 1.2em;
     padding: 20px;
     margin: 40px 20px;
-    border-radius: 0;
     box-shadow: 0;
+    border-radius: 0;
     border: 0;
     text-transform: uppercase;
     transition: all 200ms ease;
@@ -128,15 +97,17 @@ header {
         background-color: darken($lightblack, 5%);
     }
 }
+.midibutton {
+}
+.bigbutton {
+
+}
 /* Regler
 **************************************/
 .regler {
-    // LAURA: Added the pattern so it can repeat
-    // ändrade till bakgrunden som finns i design (vilken borde vi ha?)
 	background: transparent url(../img/regler.jpg);
 	background-repeat: repeat;
     padding: 0;
-    // LAURA: Added styling directly to the list
     ol {
         margin: 0 auto;
         max-width: 600px;
@@ -195,12 +166,6 @@ img {
             margin-top: 30px;
         }
         .fb-like {
-            // position: absolute;
-            // bottom: 0;
-            // left: 50%;
-            // right: 50%;
-            // margin-left: -153px;
-            // margin-right: -153px;
             background: rgba(255,255,255,.7);
             padding: 20px;
             width: 306px;

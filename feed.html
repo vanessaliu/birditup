@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bird it up!</title>
-	<meta charset="utf8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bird it up!</title>
+    <meta charset="utf8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,11 +12,11 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/instafeed.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 
 <body>
-<script>(function(d, s, id) {
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
@@ -24,38 +24,64 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-       <!-- Navbar -->
-    <div class="navbar navbar-fixed-top">
-      <div class="container">
+    <!-- Navbar -->
 
-       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-        <a class="navbar-brand text-muted" href="index.html">Bird it up</a>
-        <div class="collapse navbar-collapse">
-
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Hem</a></li>
-            <li><a href="index.html#vinst">Vinst</a></li>
-            <li><a href="index.html#inspiration">Inspiration</a></li>
-            <li><a href="index.html#regler">Regler</a></li>
-            <li><a href="index.html#instagram">Instagram</a></li>
-          </ul>
-
+    <header>
+        <div class="header-navigation">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="index.html#vinst">Vinst</a></li>
+                    <li><a href="index.html#inspiration">Inspiration</a></li>
+                    <li><a href="index.html#regler">Regler</a></li>
+                    <li><a href="index.html#instagram">Instagram</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-link"></div>
         </div>
-      </div>
-    </div>
+    </header>
     <!-- End navbar -->
+
+
+
     <!-- Instagram-->
-    <div class="container-fluid instagram" id="instagram">
-        <div id="fullfeed"></div> 
-        <div id="load-more"></div>
+    <div class="section container-fluid instagram" id="instagram">
+        <h2>Instagram</h2>
+        <div class="section-line"></div>
+        <div class="container-fluid">
+            <div id="feed-full"></div>
+            <div id="load-more"><button class="mybutton">load more</button></div>
+        </div>
     </div>
     <!-- End Instagram-->
-    
 
+    <footer class="section container-fluid footer">
+        <p class="footertext">Tävlingen gjort av studenter från Medieinstitutet.
+        <br>Samarbete med Photowall</p>
+        <p>Copyright 2014</p>
+    </footer>
+
+
+    <!-- modal for Vinster-->
+    <div class="modal fade" id="myModal">
+        <!-- modal-dialog -->
+        <div class="modal-dialog">
+            <!-- modal-content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">BIRDELICIOUS - PASTEL</h4>
+                </div>
+                <div class="modal-body">
+                    <p>XXXXXXXXX</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Stäng</button>
+                </div>
+            </div><!-- End of modal-content -->
+        </div><!-- End of modal-dialog -->
+    </div><!-- End of modal -->
+
+<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

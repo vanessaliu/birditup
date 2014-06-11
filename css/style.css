@@ -2,7 +2,7 @@
 /*#626261*/
 /* Root
 **************************************/
-/* line 13, ../scss/style.scss */
+/* line 6, ../scss/style.scss */
 body, html {
   margin: 0;
   height: 100%;
@@ -11,17 +11,17 @@ body, html {
 
 /* General
 **************************************/
-/* line 22, ../scss/style.scss */
+/* line 14, ../scss/style.scss */
 .section {
   text-align: center;
   padding: 60px 0 120px 0;
 }
-/* line 25, ../scss/style.scss */
+/* line 17, ../scss/style.scss */
 .section p {
   padding: 0px 300px;
 }
 
-/* line 30, ../scss/style.scss */
+/* line 21, ../scss/style.scss */
 h2 {
   text-transform: uppercase;
   font-size: 60px;
@@ -29,7 +29,7 @@ h2 {
   color: #555555;
 }
 
-/* line 37, ../scss/style.scss */
+/* line 27, ../scss/style.scss */
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
@@ -37,7 +37,7 @@ p {
   font-weight: 300;
 }
 
-/* line 44, ../scss/style.scss */
+/* line 34, ../scss/style.scss */
 .section-line {
   height: 1px;
   width: 200px;
@@ -49,7 +49,7 @@ p {
 
 /* Navigation
 **************************************/
-/* line 56, ../scss/style.scss */
+/* line 44, ../scss/style.scss */
 header {
   position: fixed;
   background: white;
@@ -58,19 +58,20 @@ header {
   left: 0;
   right: 0;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
+  z-index: 9000;
 }
 
-/* line 68, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 .header-navigation nav ul {
   list-style-type: none;
 }
-/* line 70, ../scss/style.scss */
+/* line 59, ../scss/style.scss */
 .header-navigation nav ul li {
   display: inline-block;
   padding: 5px 10px;
 }
-/* line 73, ../scss/style.scss */
+/* line 62, ../scss/style.scss */
 .header-navigation nav ul li a {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
@@ -80,7 +81,7 @@ header {
 
 /* Tävling
 **************************************/
-/* line 105, ../scss/style.scss */
+/* line 75, ../scss/style.scss */
 .tavling {
   background: transparent url(../img/tavling.jpg);
   background-repeat: no-repeat;
@@ -91,49 +92,50 @@ header {
   padding-top: 100px;
 }
 
-/* line 115, ../scss/style.scss */
-.mybutton {
+/* line 84, ../scss/style.scss */
+.button {
   background-color: rgba(98, 98, 97, 0.8);
   color: white;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
   padding: 20px;
   margin: 40px 20px;
-  border-radius: 0;
   box-shadow: 0;
+  border-radius: 0;
   border: 0;
   text-transform: uppercase;
   transition: all 200ms ease;
 }
-/* line 127, ../scss/style.scss */
-.mybutton:hover {
+/* line 96, ../scss/style.scss */
+.button:hover {
   background-color: rgba(85, 85, 84, 0.8);
 }
 
 /* Regler
 **************************************/
-/* line 133, ../scss/style.scss */
+/* line 107, ../scss/style.scss */
 .regler {
   background: transparent url(../img/regler.jpg);
   background-repeat: repeat;
   padding: 0;
 }
-/* line 140, ../scss/style.scss */
+/* line 111, ../scss/style.scss */
 .regler ol {
   margin: 0 auto;
   max-width: 600px;
 }
-/* line 143, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 .regler ol li {
   font-size: 30px;
   font-family: 'Playfair Display', serif;
   padding: 10px 0;
 }
-/* line 149, ../scss/style.scss */
+/* line 120, ../scss/style.scss */
 .regler p {
   padding: 60px 200px;
 }
 
-/* line 153, ../scss/style.scss */
+/* line 124, ../scss/style.scss */
 .reglerbg {
   background-color: rgba(255, 255, 255, 0.8);
   margin: 60px;
@@ -142,13 +144,13 @@ header {
 
 /* Vinst
 **************************************/
-/* line 161, ../scss/style.scss */
+/* line 132, ../scss/style.scss */
 .vinst {
   background-color: #f8f8f8;
   min-height: 700px;
 }
 
-/* line 165, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
 img {
   width: 200px;
   height: 200px;
@@ -158,7 +160,7 @@ img {
 
 /* Inspiration
 **************************************/
-/* line 174, ../scss/style.scss */
+/* line 145, ../scss/style.scss */
 .inspiration {
   background-color: #efefef;
   min-height: 700px;
@@ -166,17 +168,17 @@ img {
 
 /* Instagram
 **************************************/
-/* line 181, ../scss/style.scss */
+/* line 152, ../scss/style.scss */
 .instagram {
   background-color: #efefef;
   min-height: 700px;
 }
 
-/* line 186, ../scss/style.scss */
+/* line 157, ../scss/style.scss */
 #instagram .grid-image {
   position: relative;
 }
-/* line 189, ../scss/style.scss */
+/* line 160, ../scss/style.scss */
 #instagram .grid-image img {
   min-width: 306px;
   height: 306px;
@@ -184,35 +186,35 @@ img {
   margin: 0;
   margin-top: 30px;
 }
-/* line 197, ../scss/style.scss */
+/* line 168, ../scss/style.scss */
 #instagram .grid-image .fb-like {
   background: rgba(255, 255, 255, 0.7);
   padding: 20px;
   width: 306px;
   text-align: center;
 }
-/* line 209, ../scss/style.scss */
+/* line 180, ../scss/style.scss */
 #instagram .grid-image .fb-like button {
   padding: 10px;
 }
 
-/* line 216, ../scss/style.scss */
+/* line 187, ../scss/style.scss */
 #load-more button {
   margin-top: 100px;
 }
 
 /* Footer
 **************************************/
-/* line 222, ../scss/style.scss */
+/* line 193, ../scss/style.scss */
 .footer {
   background: transparent url(../img/footerbg.jpg);
   background-repeat: repeat;
 }
-/* line 226, ../scss/style.scss */
+/* line 197, ../scss/style.scss */
 .footer p {
   padding-bottom: 20px;
 }
-/* line 229, ../scss/style.scss */
+/* line 200, ../scss/style.scss */
 .footer .footertext {
   font-size: 30px;
   font-family: 'Playfair Display', serif;
