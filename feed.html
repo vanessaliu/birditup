@@ -24,40 +24,52 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-    <!-- Navbar -->
-
+    <!-- Header -->
     <header>
-        <div class="header-navigation">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Hem</a></li>
-                    <li><a href="index.html#vinst">Vinst</a></li>
-                    <li><a href="index.html#inspiration">Inspiration</a></li>
-                    <li><a href="index.html#regler">Regler</a></li>
-                    <li><a href="index.html#instagram">Instagram</a></li>
-                </ul>
-            </nav>
-            <div class="mobile-link"></div>
+        <div class="header-container">
+            <div class="logo">logo</div>
+            <div class="social">social</div>
+            <div class="mobile-link">menu</div>
+            <div class="header-navigation">
+                <nav>
+                    <ul>
+                        <li><a href="index.html#">Hem</a></li>
+                        <li><a href="index.html#vinst">Vinst</a></li>
+                        <li><a href="index.html#inspiration">Inspiration</a></li>
+                        <li><a href="index.html#regler">Tävlingsregler</a></li>
+                        <li><a href="index.html#instagram">Tävlingsbidrag</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    <!-- End navbar -->
+    <nav class="mobile-menu">
+        <ul>
+            <li><a href="index.html#">Hem</a></li>
+            <li><a href="index.html#vinst">Vinst</a></li>
+            <li><a href="index.html#inspiration">Inspiration</a></li>
+            <li><a href="index.html#regler">Tävlingsregler</a></li>
+            <li><a href="index.html#instagram">Tävlingsbidrag</a></li>
+        </ul>
+    </nav>
+    <!-- End Header -->
 
 
 
     <!-- Instagram-->
-    <div class="section container-fluid instagram" id="instagram">
-        <h2>Instagram</h2>
+    <div class="section container-fluid instagram" id="instagram-full">
+        <h2>Tävlingsbidrag</h2>
         <div class="section-line"></div>
-        <div class="container-fluid">
+        <div class="container">
             <div id="feed-full"></div>
-            <div id="load-more"><button class="mybutton">load more</button></div>
+            <div id="load-more"><a class="button">load more</a></div>
         </div>
     </div>
     <!-- End Instagram-->
 
     <footer class="section container-fluid footer">
-        <p class="footertext">Tävlingen gjort av studenter från Medieinstitutet.
-        <br>Samarbete med Photowall</p>
+        <p class="footertext">birditup.se är ett projekt av studenter på <a href="http://medieinstitutet.se/">Medieinstitutet</a>. I samarbete med <a href="http://www.photowall.com/">Photowall</a>.</p>
+        <a href="http://www.photowall.com/"><img src="img/photowall.png" alt="Photowall" /></a>
         <p>Copyright 2014</p>
     </footer>
 

@@ -1,5 +1,11 @@
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-    .container-fluid {
+    .tavling {
+        background-size: 1200px auto;
+    }
+    nav ul li a {
+        font-size: 0.9em;
+    }
+    .section {
         p {
             padding: 0px 150px;
         }
@@ -7,17 +13,72 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 480px) {
-    .container-fluid {
+    header {
+        .mobile-link {
+            display: block;
+        }
+        .social {
+            display: none;
+        }
+        .header-navigation {
+            display: none;
+        }
+    }
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .section {
         p {
             padding: 0px 50px;
         }
     }
+    .tavling {
+        background-size: 1200px auto;
+    }
+    .videobutton {
+        max-width: 400px;
+    }
+    .reglerbg {
+        margin: 20px;
+        padding: 20px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
-    .container-fluid {
+    header {
+        .mobile-link {
+            display: block;
+        }
+        .social {
+            display: none;
+        }
+        .header-navigation {
+            display: none;
+        }
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .section {
         p {
             padding: 0px 50px;
         }
+    }
+    .tavling {
+        background-size: 1200px auto;
+    }
+    .videobutton {
+        max-width: 300px;
+    }
+    .reglerbg {
+        margin: 0px;
+        padding: 20px;
     }
 }

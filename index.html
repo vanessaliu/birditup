@@ -3,6 +3,11 @@
 <head>
 	<title>Bird it up!</title>
 	<meta charset="utf8"/>
+    <meta property="og:image" content="http://todolio.laurakantti.com/img/appicon.png"/>
+    <meta property="og:title" content="Competition entry"/>
+    <meta property="og:description" content="This is the content"/>
+    <!-- <meta property="og:url" content="http://laurakantti.com/birditup2014inprogress/"/> -->
+    <meta property="og:site_name" content="Bird It Up!"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -23,135 +28,205 @@
       js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+    <div id="wrapper">
 
-    <!-- Header -->
-    <header>
-        <div class="header-navigation">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Hem</a></li>
-                    <li><a href="#vinst">Vinst</a></li>
-                    <li><a href="#inspiration">Inspiration</a></li>
-                    <li><a href="#regler">Regler</a></li>
-                    <li><a href="#instagram">Instagram</a></li>
-                </ul>
-            </nav>
-            <div class="mobile-link"></div>
-        </div>
-    </header>
-    <!-- End header -->
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <div class="logo">logo</div>
+                <div class="social">social</div>
+                <div class="mobile-link">menu</div>
+                <div class="header-navigation">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Hem</a></li>
+                            <li><a href="#vinst">Vinst</a></li>
+                            <li><a href="#inspiration">Inspiration</a></li>
+                            <li><a href="#regler">Tävlingsregler</a></li>
+                            <li><a href="#instagram">Tävlingsbidrag</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="#">Hem</a></li>
+                <li><a href="#vinst">Vinst</a></li>
+                <li><a href="#inspiration">Inspiration</a></li>
+                <li><a href="#regler">Tävlingsregler</a></li>
+                <li><a href="#instagram">Tävlingsbidrag</a></li>
+            </ul>
+        </nav>
+        <!-- End header -->
 
-	<!-- Tävlingsnamn -->
-	<div class="section container-fluid tavling">
-        <h2>Bird It Up!</h2>
-        <div class="section-line"></div>
-        <p>Peace, bird and understanding.</p>
-        <button class="button bigbutton"><span class="glyphicon glyphicon-play-circle"></span></button>
-        <button class="button midibutton">Tävla Här</button>
-        <button class="button midibutton">Alla bidrag</button>
-	</div>
-    <!-- End Tävlingsnamn -->
+    	<!-- Tävlingsnamn -->
+    	<div class="section container-fluid tavling">
+            <h2>Bird It Up!</h2>
+            <!-- <div class="section-line"></div> -->
+            <h3>Make a bird, not war.</h3>
+            <a class="button videobutton">
+                <span class="glyphicon glyphicon-play-circle"></span>
+                <span>text här</span>
+            </a>
+            <a class="button">Så tävlar du</a>
+            <a class="button">Alla bidrag</a>
+    	</div>
+        <!-- End Tävlingsnamn -->
 
-	<!-- Vinst-->
-	<div class="section container-fluid vinst" id="vinst">
-        <h2>Vinster</h2>
-		<div class="section-line"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="modal" data-target="#myModal">
-                    <img src="img/vinster/vinst1.png">
+    	<!-- Vinst-->
+    	<div class="section container-fluid vinst" id="vinst">
+            <h2>Vad vinner man?</h2>
+    		<div class="section-line"></div>
+            <p>Vinnaren får ett presentkort till ett värde av 2000 kronor. Presentkortet gäller alla tapeter i Photowalls sortiment.</p>
+            <p>Bird it up! Här är våra favoriter:</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="modal" data-target="#myModal">
+                        <img src="img/vinster/vinst1.png">
+                        </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <img src="img/vinster/vinst2.png">
                     </div>
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <img src="img/vinster/vinst2.png">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <img src="img/vinster/vinst3.png">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <img src="img/vinster/vinst4.png">
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <img src="img/vinster/vinst3.png">
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <img src="img/vinster/vinst4.png">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <img src="img/vinster/vinst5.png">
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <img src="img/vinster/vinst6.png">
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <img src="img/vinster/vinst1.png">
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <img src="img/vinster/vinst2.png">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <img src="img/vinster/vinst5.png">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <img src="img/vinster/vinst6.png">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <img src="img/vinster/vinst1.png">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <img src="img/vinster/vinst2.png">
+                    </div>
                 </div>
             </div>
+            <p>Hitta din favorittapet: </p>
+            <!-- <a href="http://www.photowall.com/" class="button">www.photowall.se</a>
+            <p>I samarbete med:</p> -->
+            <a href="http://www.photowall.com/"><img src="img/pw-text.png" alt="Photowall" /></a>
+    	</div>
+    	</div>
+        <!-- End Vinst-->
+
+    	<!-- Inspiration-->
+    	<div class="section container-fluid inspiration" id="inspiration">
+            <h2>Inspiration</h2>
+    		<div class="section-line"></div>
+            <div id="myCarousel" class="carousel slide">
+            <div class="container">
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#myCarousel" data-silde-to="0"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active  img-responsive inspirationSilde">
+                        <img src="img/example1.jpg" alt="inspiration">
+                    </div>
+                    <div class="item  img-responsive inspirationSilde">
+                        <img src="img/example2.jpg" alt="inspiration">
+                    </div>
+                    <div class="item  img-responsive inspirationSilde">
+                        <img src="img/example3.jpg" alt="inspiration">
+                    </div>
+                    <div class="item  img-responsive inspirationSilde">
+                        <img src="img/example4.jpg" alt="inspiration">
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
         </div>
+    	</div>
+        <!-- End Inspiration-->
 
-	</div>
-	</div>
-    <!-- End Vinst-->
+    	<!-- Regler-->
+    	<div class="section container-fluid regler" id="regler">
+    		<div class="reglerbg">
+                <h2>Så tävlar du</h2>
+    			<div class="section-line"></div>
+        		<ol>
+        			<li>Kraxa, flaxa, härma. Porträttera en fågel på något sätt – vilket som helst. Var kreativ! Baka en kaka formad som en fågel, gör fågeldansen eller sjung en sång om en fågel. Din fantasi sätter gränserna. </li>
+        			<li>Fånga på bild eller i ett videoklipp. Lägg ut på Instagram och tagga ditt bidrag med #birditup2014 (kom ihåg att öppna upp ditt konto om det är privat).</li>
+        			<li>Alla bidrag kommer visas här på birditup.se där även röstning äger rum. 1 like = 1 röst. En jury kommer utse vinner av de 5 bidrag som fått flest röster.</li>
+                    <li>Tävlingen pågår fram [FYLLA IN]</li>
+        		</ol>
+    			<p>Tävlingsvillkor (text inte färdig). Eventuell vinstskatt betalas av vinnaren. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    		</div>
+    	</div>
+        <!-- End Regler-->
 
-	<!-- Inspiration-->
-	<div class="section container-fluid inspiration" id="inspiration">
-        <h2>Inspiration</h2>
-		<div class="section-line"></div>
-	</div>
-    <!-- End Inspiration-->
+    	<!-- Instagram-->
+    	<div class="section container-fluid instagram" id="instagram">
+            <h2>Tävlingsbidrag</h2>
+    		<div class="section-line"></div>
+            <p>Senaste</p>
+            <div class="container">
+                <div id="feed"></div>
+                <div class="clearfix"></div>
+                <a href="feed.html" class="button">Se alla</a>
+            </div>
+    	</div>
+        <!-- End Instagram-->
 
-	<!-- Regler-->
-	<div class="section container-fluid regler" id="regler">
-		<div class="reglerbg">
-            <h2>Regler</h2>
-			<div class="section-line"></div>
-    		<ol>
-    			<li>Lorem Ipsum is simply dummy text </li>
-    			<li>Lorem Ipsum is simply dummy text </li>
-    			<li>Lorem Ipsum is simply dummy text </li>
-    			<li>Lorem Ipsum is simply dummy text </li>
-    			<li>Lorem Ipsum is simply dummy text </li>
-    		</ol>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-		</div>
-	</div>
-    <!-- End Regler-->
+    	<footer class="section container-fluid footer">
+            <p class="footertext">birditup.se är ett projekt av studenter på <a href="http://medieinstitutet.se/">Medieinstitutet</a>. I samarbete med <a href="http://www.photowall.com/">Photowall</a>.</p>
+            <a href="http://www.photowall.com/"><img src="img/photowall.png" alt="Photowall" /></a>
+            <p>Copyright 2014</p>
+    	</footer>
 
-	<!-- Instagram-->
-	<div class="section container-fluid instagram" id="instagram">
-        <h2>Instagram</h2>
-		<div class="section-line"></div>
-        <div class="container-fluid">
-            <div id="feed"></div>
-            <div id="load-more"><button class="midibutton">load more</button></div>
-        </div>
-	</div>
-    <!-- End Instagram-->
+    </div>
 
-	<footer class="section container-fluid footer">
-        <p class="footertext">Tävlingen gjort av studenter från Medieinstitutet.
-        <br>Samarbete med Photowall</p>
-        <p>Copyright 2014</p>
-	</footer>
+    <div class="modal fade" id="myModal">
+        <!-- modal-dialog -->
+        <div class="modal-dialog">
+            <!-- modal-content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Birdelicious - Pastel</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="big-image">
+                        <img id="main" class="pull-right" src="img/modal/1-big.jpg">
+                    </div>
+                    <div class="thumbnails">
+                        <a href="img/modal/1-big.jpg" onclick="swap(this); return false;"><img class="thumbs" src="img/modal/1-small.png" alt="1-small"></a>
+                        <a href="img/modal/2-big.jpg" onclick="swap(this); return false;"><img class="thumbs" src="img/modal/2-small.png" alt="2-small"></a>
+                        <a href="img/modal/3-big.jpg" onclick="swap(this); return false;"><img class="thumbs" src="img/modal/3-small.png" alt="3-small"></a>
+                        <a href="img/modal/4-big.jpg" onclick="swap(this); return false;"><img class="thumbs" src="img/modal/4-small.png" alt="4-small"></a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="modal-text">
+                    <h1>Tapetnamn av tapetdesigner</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
 
+                </div> <!--End of modal body-->
+            </div><!-- End of modal-content -->
+        </div><!-- End of modal-dialog -->
+    </div><!-- End of modal -->
 
-	<!-- modal for Vinster-->
-	<div class="modal fade" id="myModal">
-		<!-- modal-dialog -->
-		<div class="modal-dialog">
-			<!-- modal-content -->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">BIRDELICIOUS - PASTEL</h4>
-				</div>
-				<div class="modal-body">
-					<p>XXXXXXXXX</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Stäng</button>
-				</div>
-			</div><!-- End of modal-content -->
-		</div><!-- End of modal-dialog -->
-	</div><!-- End of modal -->
+ <script type="text/javascript">
+     function swap(image) {
+         document.getElementById("main").src = image.href;
+     }
+ </script>
 
 <script type="text/javascript" src="js/scripts.js"></script>
 </body>

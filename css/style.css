@@ -2,42 +2,40 @@
 /*#626261*/
 /* Root
 **************************************/
-/* line 6, ../scss/style.scss */
+/* line 5, ../scss/_main.scss */
 body, html {
   margin: 0;
   height: 100%;
   color: #555555;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 11, ../scss/_main.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* General
 **************************************/
-/* line 14, ../scss/style.scss */
+/* line 19, ../scss/_main.scss */
+#wrapper {
+  width: 100%;
+}
+
+/* line 22, ../scss/_main.scss */
 .section {
+  width: 100%;
   text-align: center;
   padding: 60px 0 120px 0;
 }
-/* line 17, ../scss/style.scss */
+/* line 26, ../scss/_main.scss */
 .section p {
   padding: 0px 300px;
 }
 
-/* line 21, ../scss/style.scss */
-h2 {
-  text-transform: uppercase;
-  font-size: 60px;
-  font-family: 'Playfair Display', serif;
-  color: #555555;
-}
-
-/* line 27, ../scss/style.scss */
-p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 25px;
-  color: #555555;
-  font-weight: 300;
-}
-
-/* line 34, ../scss/style.scss */
+/* line 30, ../scss/_main.scss */
 .section-line {
   height: 1px;
   width: 200px;
@@ -47,54 +45,138 @@ p {
   padding: 20px 0;
 }
 
+/* Typography
+**************************************/
+/* line 40, ../scss/_main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* line 43, ../scss/_main.scss */
+h2 {
+  margin: 40px auto 20px auto;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: #555555;
+}
+
+/* line 49, ../scss/_main.scss */
+p {
+  font-size: 25px;
+  color: #555555;
+  font-weight: 300;
+}
+
+/* line 55, ../scss/_main.scss */
+a:hover {
+  text-decoration: none;
+}
+
 /* Navigation
 **************************************/
-/* line 44, ../scss/style.scss */
+/* line 61, ../scss/_main.scss */
 header {
   position: fixed;
   background: white;
   width: 100%;
+  height: 80px;
   top: 0;
   left: 0;
   right: 0;
   text-align: center;
-  padding: 20px;
   z-index: 9000;
+  border-bottom: 1px solid #eeeeee;
 }
-
-/* line 57, ../scss/style.scss */
-.header-navigation nav ul {
-  list-style-type: none;
+/* line 72, ../scss/_main.scss */
+header .header-container {
+  margin: 0 auto;
+  max-width: 1600px;
 }
-/* line 59, ../scss/style.scss */
-.header-navigation nav ul li {
+/* line 78, ../scss/_main.scss */
+header .logo,
+header .mobile-link,
+header .social {
+  height: 80px;
+  width: 15%;
+  padding: 20px;
+}
+/* line 83, ../scss/_main.scss */
+header .logo {
+  float: left;
+}
+/* line 86, ../scss/_main.scss */
+header .mobile-link {
+  float: right;
+  display: none;
+}
+/* line 90, ../scss/_main.scss */
+header .social {
+  float: right;
+}
+/* line 93, ../scss/_main.scss */
+header .header-navigation {
+  margin: 0 auto;
+  padding: 20px;
+  width: 70%;
+}
+/* line 99, ../scss/_main.scss */
+header .header-navigation nav ul li {
   display: inline-block;
   padding: 5px 10px;
 }
-/* line 62, ../scss/style.scss */
-.header-navigation nav ul li a {
+
+/* line 107, ../scss/_main.scss */
+nav ul li a {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   color: #555555;
   font-size: 1.2em;
 }
 
+/* line 114, ../scss/_main.scss */
+.mobile-menu {
+  display: none;
+  background: white;
+  width: 100%;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  z-index: 9000;
+}
+/* line 124, ../scss/_main.scss */
+.mobile-menu ul li {
+  text-align: center;
+  display: block;
+  padding: 15px;
+  border-bottom: 1px solid #eeeeee;
+}
+/* line 129, ../scss/_main.scss */
+.mobile-menu ul li:first-of-type {
+  border-top: 1px solid #eeeeee;
+}
+
 /* Tävling
 **************************************/
-/* line 75, ../scss/style.scss */
+/* line 139, ../scss/_main.scss */
 .tavling {
-  background: transparent url(../img/tavling.jpg);
+  background-color: #f8f8f8;
+  background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
-  background-size: auto 1000px;
+  background-size: 1600px auto;
   background-position: top center;
   display: table;
   height: 100%;
-  padding-top: 100px;
+}
+/* line 147, ../scss/_main.scss */
+.tavling h2, .tavling h3 {
+  padding-top: 20px;
 }
 
-/* line 84, ../scss/style.scss */
+/* line 151, ../scss/_main.scss */
 .button {
-  background-color: rgba(98, 98, 97, 0.8);
+  display: inline-block;
+  background-color: rgba(124, 199, 199, 0.8);
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
@@ -106,136 +188,372 @@ header {
   text-transform: uppercase;
   transition: all 200ms ease;
 }
-/* line 96, ../scss/style.scss */
+/* line 164, ../scss/_main.scss */
 .button:hover {
-  background-color: rgba(85, 85, 84, 0.8);
+  background-color: rgba(99, 188, 188, 0.8);
+  color: white;
+  text-decoration: none;
+}
+
+/* line 171, ../scss/_main.scss */
+.videobutton {
+  width: 600px;
+  height: 300px;
+  display: block;
+  margin: 40px auto 40px auto;
+  padding: 80px;
+}
+/* line 177, ../scss/_main.scss */
+.videobutton span {
+  display: block;
+  padding: 10px;
+}
+/* line 181, ../scss/_main.scss */
+.videobutton .glyphicon {
+  font-size: 5em;
+}
+
+/* Vinst
+**************************************/
+/* line 187, ../scss/_main.scss */
+.vinst {
+  background-color: white;
+  min-height: 700px;
+}
+/* line 190, ../scss/_main.scss */
+.vinst .container {
+  margin: 50px auto;
+}
+/* line 192, ../scss/_main.scss */
+.vinst .container img {
+  width: 200px;
+  height: 200px;
+  border: 15px solid #f8f8f8;
+  margin-top: 30px;
+}
+/* line 199, ../scss/_main.scss */
+.vinst .button {
+  margin-top: 20px;
+}
+
+/* Inspiration
+**************************************/
+/* line 205, ../scss/_main.scss */
+.inspiration {
+  background-color: #f8f8f8;
+  min-height: 700px;
+}
+
+/* line 209, ../scss/_main.scss */
+.inspirationSilde {
+  margin-top: -29px;
+  height: auto;
+}
+/* line 212, ../scss/_main.scss */
+.inspirationSilde img {
+  border: none;
+  width: 80%;
+  margin-left: 10%;
+}
+
+/* line 218, ../scss/_main.scss */
+.carousel-indicators {
+  bottom: 0;
+}
+/* line 220, ../scss/_main.scss */
+.carousel-indicators li {
+  border-color: #222;
+}
+
+/* line 224, ../scss/_main.scss */
+.carousel-indicators .active {
+  background-color: #222;
 }
 
 /* Regler
 **************************************/
-/* line 107, ../scss/style.scss */
+/* line 229, ../scss/_main.scss */
 .regler {
-  background: transparent url(../img/regler.jpg);
+  background: transparent url(../img/pattern.jpg);
   background-repeat: repeat;
   padding: 0;
 }
-/* line 111, ../scss/style.scss */
+/* line 233, ../scss/_main.scss */
 .regler ol {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 800px;
 }
-/* line 114, ../scss/style.scss */
+/* line 236, ../scss/_main.scss */
 .regler ol li {
-  font-size: 30px;
+  font-size: 24px;
   font-family: 'Playfair Display', serif;
   padding: 10px 0;
 }
-/* line 120, ../scss/style.scss */
+/* line 242, ../scss/_main.scss */
 .regler p {
   padding: 60px 200px;
 }
 
-/* line 124, ../scss/style.scss */
+/* line 246, ../scss/_main.scss */
 .reglerbg {
   background-color: rgba(255, 255, 255, 0.8);
   margin: 60px;
   padding: 60px;
 }
 
-/* Vinst
-**************************************/
-/* line 132, ../scss/style.scss */
-.vinst {
-  background-color: #f8f8f8;
-  min-height: 700px;
-}
-
-/* line 136, ../scss/style.scss */
-img {
-  width: 200px;
-  height: 200px;
-  border: 15px solid white;
-  margin-top: 30px;
-}
-
-/* Inspiration
-**************************************/
-/* line 145, ../scss/style.scss */
-.inspiration {
-  background-color: #efefef;
-  min-height: 700px;
-}
-
 /* Instagram
 **************************************/
-/* line 152, ../scss/style.scss */
+/* line 253, ../scss/_main.scss */
 .instagram {
-  background-color: #efefef;
-  min-height: 700px;
+  background-color: #f8f8f8;
 }
-
-/* line 157, ../scss/style.scss */
-#instagram .grid-image {
+/* line 255, ../scss/_main.scss */
+.instagram .container {
+  max-width: 1200px;
+}
+/* line 258, ../scss/_main.scss */
+.instagram .button {
+  margin-top: 100px;
+}
+/* line 261, ../scss/_main.scss */
+.instagram .grid-image {
   position: relative;
 }
-/* line 160, ../scss/style.scss */
-#instagram .grid-image img {
-  min-width: 306px;
-  height: 306px;
+/* line 265, ../scss/_main.scss */
+.instagram .grid-image a {
+  display: block;
+}
+/* line 267, ../scss/_main.scss */
+.instagram .grid-image a img {
+  width: 200px;
+  height: 200px;
   border: 0;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 20px;
 }
-/* line 168, ../scss/style.scss */
-#instagram .grid-image .fb-like {
+/* line 275, ../scss/_main.scss */
+.instagram .grid-image .fb-like {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
   background: rgba(255, 255, 255, 0.7);
   padding: 20px;
-  width: 306px;
   text-align: center;
 }
-/* line 180, ../scss/style.scss */
-#instagram .grid-image .fb-like button {
-  padding: 10px;
-}
 
-/* line 187, ../scss/style.scss */
-#load-more button {
+/* line 305, ../scss/_main.scss */
+#load-more .button {
   margin-top: 100px;
 }
 
 /* Footer
 **************************************/
-/* line 193, ../scss/style.scss */
+/* line 311, ../scss/_main.scss */
 .footer {
-  background: transparent url(../img/footerbg.jpg);
+  background: transparent url(../img/footerpattern.jpg);
   background-repeat: repeat;
 }
-/* line 197, ../scss/style.scss */
+/* line 315, ../scss/_main.scss */
 .footer p {
+  padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 200, ../scss/style.scss */
+/* line 319, ../scss/_main.scss */
 .footer .footertext {
   font-size: 30px;
   font-family: 'Playfair Display', serif;
   margin-top: 80px;
 }
 
+/* Modal
+**************************************/
+/* line 328, ../scss/_main.scss */
+.modal {
+  z-index: 99999;
+}
+/* line 330, ../scss/_main.scss */
+.modal .modal-dialog {
+  width: 900px;
+}
+/* line 334, ../scss/_main.scss */
+.modal .modal-title {
+  font-family: 'Playfair Display', serif;
+}
+/* line 338, ../scss/_main.scss */
+.modal #main {
+  width: 700px;
+  height: 560px;
+  margin-top: 0px;
+}
+/* line 345, ../scss/_main.scss */
+.modal .thumbs {
+  width: 140px;
+  height: 140px;
+  margin-top: 0px;
+}
+/* line 351, ../scss/_main.scss */
+.modal .modal-text {
+  text-align: center;
+}
+/* line 353, ../scss/_main.scss */
+.modal .modal-text h1 {
+  font-family: 'Playfair Display', serif;
+}
+/* line 356, ../scss/_main.scss */
+.modal .modal-text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* line 364, ../scss/_main.scss */
+.modal-body .big-image,
+.modal-body .thumbnails {
+  float: right;
+}
+/* line 367, ../scss/_main.scss */
+.modal-body .big-image {
+  width: 85%;
+}
+/* line 370, ../scss/_main.scss */
+.modal-body .thumbnails {
+  width: 15%;
+  margin: 0 auto;
+}
+/* line 373, ../scss/_main.scss */
+.modal-body .thumbnails img {
+  width: 100px;
+  height: 100px;
+  margin: 0px 10px 20px 10px;
+}
+
+/* Coming soon
+**************************************/
+/* line 382, ../scss/_main.scss */
+.coming-soon {
+  background-image: url(../img/soon.jpg);
+  width: 100%;
+  display: table;
+  height: 100%;
+  position: relative;
+}
+/* line 388, ../scss/_main.scss */
+.coming-soon .soon-inner {
+  width: 600px;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-left: -300px;
+}
+/* line 395, ../scss/_main.scss */
+.coming-soon .soon-inner h1 {
+  font-size: 5em;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-  /* line 3, ../scss/_responsive.scss */
-  .container-fluid p {
+  /* line 2, ../scss/_responsive.scss */
+  .tavling {
+    background-size: 1200px auto;
+  }
+
+  /* line 5, ../scss/_responsive.scss */
+  nav ul li a {
+    font-size: 0.9em;
+  }
+
+  /* line 9, ../scss/_responsive.scss */
+  .section p {
     padding: 0px 150px;
   }
 }
 @media screen and (max-width: 768px) and (min-width: 480px) {
-  /* line 11, ../scss/_responsive.scss */
-  .container-fluid p {
+  /* line 17, ../scss/_responsive.scss */
+  header .mobile-link {
+    display: block;
+  }
+  /* line 20, ../scss/_responsive.scss */
+  header .social {
+    display: none;
+  }
+  /* line 23, ../scss/_responsive.scss */
+  header .header-navigation {
+    display: none;
+  }
+
+  /* line 27, ../scss/_responsive.scss */
+  h2 {
+    font-size: 40px;
+  }
+
+  /* line 30, ../scss/_responsive.scss */
+  p {
+    font-size: 20px;
+  }
+
+  /* line 34, ../scss/_responsive.scss */
+  .section p {
     padding: 0px 50px;
+  }
+
+  /* line 38, ../scss/_responsive.scss */
+  .tavling {
+    background-size: 1200px auto;
+  }
+
+  /* line 41, ../scss/_responsive.scss */
+  .videobutton {
+    max-width: 400px;
+  }
+
+  /* line 44, ../scss/_responsive.scss */
+  .reglerbg {
+    margin: 20px;
+    padding: 20px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 19, ../scss/_responsive.scss */
-  .container-fluid p {
+  /* line 53, ../scss/_responsive.scss */
+  header .mobile-link {
+    display: block;
+  }
+  /* line 56, ../scss/_responsive.scss */
+  header .social {
+    display: none;
+  }
+  /* line 59, ../scss/_responsive.scss */
+  header .header-navigation {
+    display: none;
+  }
+
+  /* line 63, ../scss/_responsive.scss */
+  h2 {
+    font-size: 30px;
+  }
+
+  /* line 66, ../scss/_responsive.scss */
+  p {
+    font-size: 20px;
+  }
+
+  /* line 70, ../scss/_responsive.scss */
+  .section p {
     padding: 0px 50px;
+  }
+
+  /* line 74, ../scss/_responsive.scss */
+  .tavling {
+    background-size: 1200px auto;
+  }
+
+  /* line 77, ../scss/_responsive.scss */
+  .videobutton {
+    max-width: 300px;
+  }
+
+  /* line 80, ../scss/_responsive.scss */
+  .reglerbg {
+    margin: 0px;
+    padding: 20px;
   }
 }

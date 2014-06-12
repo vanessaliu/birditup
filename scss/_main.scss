@@ -1,0 +1,400 @@
+
+
+/* Root
+**************************************/
+body, html {
+    margin: 0;
+    height: 100%;
+    color: $textcolor;
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* General
+**************************************/
+#wrapper {
+    width: 100%;
+}
+.section {
+    width: 100%;
+    text-align: center;
+    padding: 60px 0 120px 0;
+    p {
+        padding: 0px 300px;
+    }
+}
+.section-line {
+    height: 1px;
+    width: 200px;
+    border-bottom: 1px solid $sectionline;
+    text-align: center;
+    margin: 20px auto 40px auto;
+    padding: 20px 0;
+}
+/* Typography
+**************************************/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+h2 {
+    margin: 40px auto 20px auto;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: $textcolor;
+}
+p {
+    font-size: 25px;
+    color: $textcolor;
+    font-weight: 300;
+}
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+/* Navigation
+**************************************/
+header {
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 9000;
+    border-bottom: 1px solid $border-grey;
+    .header-container {
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+    .logo,
+    .mobile-link,
+    .social {
+        height: 80px;
+        width: 15%;
+        padding: 20px;
+    }
+    .logo {
+        float: left;
+    }
+    .mobile-link {
+        float: right;
+        display: none;
+    }
+    .social {
+        float: right;
+    }
+    .header-navigation {
+        margin: 0 auto;
+        padding: 20px;
+        width: 70%;
+        nav {
+            ul {
+                li {
+                    display: inline-block;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}
+nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: $textcolor;
+    font-size: 1.2em;
+}
+
+.mobile-menu {
+    display: none;
+    background: white;
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 9000;
+    ul {
+        li {
+            text-align: center;
+            display: block;
+            padding: 15px;
+            border-bottom: 1px solid $border-grey;
+            &:first-of-type {
+                border-top: 1px solid $border-grey;
+            }
+
+        }
+    }
+}
+
+/* Tävling
+**************************************/
+.tavling {
+    background-color: $lightgrey;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px auto;
+    background-position: top center;
+    display: table;
+    height: 100%;
+    h2, h3 {
+        padding-top: 20px;
+    }
+}
+.button {
+    display: inline-block;
+    background-color: $buttoncolor;
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    padding: 20px;
+    margin: 40px 20px;
+    box-shadow: 0;
+    border-radius: 0;
+    border: 0;
+    text-transform: uppercase;
+    transition: all 200ms ease;
+    &:hover {
+        background-color: darken($buttoncolor, 7%);
+        color: $white;
+        text-decoration: none;
+
+    }
+}
+.videobutton {
+    width: 600px;
+    height: 300px;
+    display: block;
+    margin: 40px auto 40px auto;
+    padding: 80px;
+    span {
+        display: block;
+        padding: 10px;
+    }
+    .glyphicon {
+        font-size: 5em;
+    }
+}
+/* Vinst
+**************************************/
+.vinst {
+    background-color: $white;
+    min-height: 700px;
+    .container {
+        margin: 50px auto;
+        img {
+            width: 200px;
+            height: 200px;
+            border: 15px solid $lightgrey;
+            margin-top: 30px;
+        }
+    }
+    .button {
+        margin-top: 20px;
+    }
+}
+/* Inspiration
+**************************************/
+.inspiration {
+    background-color: $lightgrey;
+    min-height: 700px;
+}
+.inspirationSilde{
+    margin-top: -29px;
+    height: auto;
+    img{
+        border: none;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+.carousel-indicators{
+    bottom: 0;
+    li{
+        border-color:#222;
+    }
+}
+.carousel-indicators .active{
+    background-color:#222;
+}
+/* Regler
+**************************************/
+.regler {
+    background: transparent url(../img/pattern.jpg);
+    background-repeat: repeat;
+    padding: 0;
+    ol {
+        margin: 0 auto;
+        max-width: 800px;
+        li {
+            font-size: 24px;
+            font-family: 'Playfair Display', serif;
+            padding: 10px 0;
+        }
+    }
+    p {
+        padding: 60px 200px;
+    }
+}
+.reglerbg {
+    background-color: $lightwhite;
+    margin: 60px;
+    padding: 60px;
+}
+/* Instagram
+**************************************/
+.instagram {
+    background-color: $lightgrey;
+    .container {
+        max-width: 1200px;
+    }
+    .button {
+        margin-top: 100px;
+    }
+    .grid-image {
+        // width: 200px;
+        // float: left;
+        position: relative;
+        a {
+            display: block;
+            img {
+                width: 200px;
+                height: 200px;
+                border: 0;
+                margin: 0;
+                margin-top: 20px;
+            }
+        }
+        .fb-like {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            // position: absolute;
+            // top: 200px;
+            background: rgba(255,255,255,.7);
+            padding: 20px;
+            text-align: center;
+
+        }
+    }
+}
+#instagram {
+    // img {
+    //     width: 306px;
+    //     height: 306px;
+    // }
+    // .fb-like {
+    //     width: 306px;
+    // }
+}
+#instagram-full {
+    // padding-top: 100px;
+    // img {
+    // }
+    // .fb-like {
+    // }
+}
+#load-more {
+    .button {
+        margin-top: 100px;
+    }
+}
+/* Footer
+**************************************/
+.footer {
+    // LAURA: Added the pattern so it can repeat
+    background: transparent url(../img/footerpattern.jpg);
+    background-repeat: repeat;
+    p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footertext {
+        font-size: 30px;
+        font-family: 'Playfair Display', serif;
+        margin-top: 80px;
+    }
+}
+
+/* Modal
+**************************************/
+.modal{
+    z-index: 99999;
+    .modal-dialog{
+        width: 900px;
+    }
+
+    .modal-title{
+        font-family: 'Playfair Display', serif;
+    }
+
+    #main{
+        width: 700px;
+        height: 560px;
+        margin-top: 0px;
+    }
+
+
+    .thumbs{
+        width: 140px;
+        height: 140px;
+        margin-top: 0px;
+    }
+
+    .modal-text{
+        text-align: center;
+        h1{
+            font-family: 'Playfair Display', serif;
+        }
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+        }
+    }
+}
+.modal-body {
+    .big-image,
+    .thumbnails {
+        float: right;
+    }
+    .big-image {
+        width: 85%;
+    }
+    .thumbnails {
+        width: 15%;
+        margin: 0 auto;
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 0px 10px 20px 10px;
+        }
+    }
+}
+/* Coming soon
+**************************************/
+.coming-soon {
+    background-image: url(../img/soon.jpg);
+    width: 100%;
+    display: table;
+    height: 100%;
+    position: relative;
+    .soon-inner {
+        width: 600px;
+        text-align: center;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        margin-left: -300px;
+        h1 {
+            font-size: 5em;
+            text-transform: uppercase;
+        }
+    }
+}
