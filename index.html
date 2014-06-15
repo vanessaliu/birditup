@@ -29,17 +29,11 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
     <!-- SCRIPTS -->
     <script type="text/javascript" src="js/vendor/instafeed.min.js"></script>
+    <script type="text/javascript" src="//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0"></script>
 </head>
 
 <body>
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Wrapper -->
     <div id="wrapper">
@@ -202,10 +196,12 @@
             <p>Rösta på din favorit här! 1 Like = 1 röst. Du kan rösta på flera bilder, dock endast en gång på varje bidrag. Gillamarkeringar på Instagram räknas inte med i röstningsresultatet.</p>
             <p style="color: red;">Behöver säga att röstning händer via Facebook-like, så man vett att man inte kan ha FB blockerat på sidan. (Annars kommer man inte se röstningsknappen och vet inte varför)</p>
             <div class="container">
-                <div class="empty-feed"><p style="color:red;">Det finns inga tävlingsbidrag än. Ska du vara först?</p></div>
+                <!-- <div class="empty-feed"><p style="color:red;">Det finns inga tävlingsbidrag än. Ska du vara först?</p></div> -->
                 <div id="feed"></div>
                 <div class="clearfix"></div>
-                <a href="feed.html" class="button">Se alla</a>
+                <div id="see-more">
+                    <a href="feed.html" class="button" >Visa mer</a>
+                </div>
             </div>
     	</div>
         <!-- End Instagram-->
@@ -261,7 +257,7 @@
             <!-- <p><a href="http://birditup.se"><img src="" alt="Bird It Up!"/></a></p> -->
             <a href="http://medieinstitutet.se"><img src="img/medieinstitutet.png" alt="Medieinstitutet"/></a>
             <a href="http://www.photowall.com/"><img src="img/photowall.png" alt="Photowall"/></a>
-            <p>Copyright 2014</p>
+            <h4>Copyright 2014</h4>
         </footer>
         <!-- End footer -->
     </div>

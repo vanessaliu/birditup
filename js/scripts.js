@@ -10,7 +10,6 @@ var birdItUp = {
         // Initialize Instagram functions
         birdItUp.instaFeedBase();
         birdItUp.instaFeedFull();
-        // birdItUp.feedControls();
         birdItUp.loadVotedImage();
         FB.XFBML.parse();
 
@@ -18,7 +17,7 @@ var birdItUp = {
     },
 
     instaFeedBase: function() {
-        // how to get name?
+        var seeMore = $('#see-more');
         var feed = new Instafeed({
             get: 'tagged',
             tagName: 'bird',
@@ -30,15 +29,18 @@ var birdItUp = {
             template: this.template,
             after: function() {
                 birdItUp.bindLinkToModal();
-                FB.XFBML.parse()
+                console.log('thishasnext', this.hasNext());
+                FB.XFBML.parse();
+                if (!this.hasNext()) {
+                    seeMore.addClass('hidden');
+                }
             }
         });
-        console.log('feed', feed);
         feed.run();
-
     },
 
     instaFeedFull: function() {
+        // return;
         var loadButton = $('#load-more');
         var largeFeed = new Instafeed({
             get: 'tagged',
@@ -53,8 +55,8 @@ var birdItUp = {
                 birdItUp.bindLinkToModal();
                 // disable button if no more results to load
                 if (!this.hasNext()) {
-                  loadButton.setAttribute('disabled', 'disabled');
-              }
+                    loadButton.addClass('disabled');
+                }
               FB.XFBML.parse();
             }
         });
@@ -62,20 +64,6 @@ var birdItUp = {
             largeFeed.next();
         });
         largeFeed.run();
-    },
-
-    feedControls: function() {
-        // var images = $('#feed').find('.grid-image');
-        // console.log('what is the length', images.length);
-        // if (!images) {
-        //     $('.empty-feed').show();
-        //     console.log('show the text');
-        // } else {
-        //     $('.empty-feed').hide();
-        //     console.log('dont show text there are images');
-        // }
-        // todo: if empty feed, show a div that says that there are no entries
-        // todo: if less than 12 in feed, dont show see all
     },
 
     bindLinkToModal: function() {
@@ -164,5 +152,3 @@ var birdItUp = {
 };
 
 birdItUp.init();
-// $('document').ready(function() {
-// });
