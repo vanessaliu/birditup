@@ -1,13 +1,72 @@
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-    .tavling {
+    header {
+        .mobile-link {
+            display: block;
+        }
+        .logo,
+        .social {
+            width: 30%;
+        }
+        .social {
+            // display: none;
+        }
+        .header-navigation {
+            display: none;
+        }
+    }
+    .landing {
         background-size: 1200px auto;
     }
-    nav ul li a {
-        font-size: 0.9em;
-    }
-    .section {
-        p {
+    .section p {
             padding: 0px 150px;
+    }
+    .vinst {
+        // FIX VINST I RESPONSIV
+    }
+    .regler p {
+        padding: 60px;
+    }
+    .inspiration .carousel .carousel-control.left {
+        left: 40px;
+    }
+    .inspiration .carousel .carousel-control.right {
+        right: 40px;
+    }
+    .modal{
+        .modal-dialog {
+            width: 90%;
+            .modal-content {
+                .close {
+                }
+                .modal-header {
+                    border: 0;
+                    h3 {
+                        margin: 0;
+                    }
+                }
+                .modal-body {
+                    .big-image,
+                    .thumbnails {
+                        float: none;
+                        width: 100%;
+                    }
+                    .big-image {
+                        height: auto;
+                    }
+                    .thumbnails {
+                        width: 100%;
+                        margin: 0 auto;
+                        a {
+                            display: inline-block;
+                        }
+                        img {
+                            margin: 20px 20px 20px 0px;
+                            width: 120px;
+                            height: 120px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -16,6 +75,8 @@
     header {
         .mobile-link {
             display: block;
+            float: right;
+            width: 25%;
         }
         .social {
             display: none;
@@ -24,18 +85,19 @@
             display: none;
         }
     }
+    .mobile-social {
+        display: block;
+    }
     h2 {
         font-size: 40px;
     }
     p {
         font-size: 20px;
     }
-    .section {
-        p {
+    .section p {
             padding: 0px 50px;
-        }
     }
-    .tavling {
+    .landing {
         background-size: 1200px auto;
     }
     .videobutton {
@@ -45,13 +107,56 @@
         margin: 20px;
         padding: 20px;
     }
-
+    .regler p {
+        padding: 60px;
+    }
+    .inspiration .carousel .carousel-control.left {
+        left: 0px;
+    }
+    .inspiration .carousel .carousel-control.right {
+        right: 0px;
+    }
+    .modal{
+        .modal-dialog {
+            width: 100%;
+            margin: 0;
+            .modal-content {
+                .modal-header {
+                    padding-right: 80px;
+                }
+                .modal-body {
+                    .big-image,
+                    .thumbnails {
+                        float: none;
+                        width: 100%;
+                    }
+                    .big-image {
+                        height: auto;
+                    }
+                    .thumbnails {
+                        width: 100%;
+                        margin: 0 auto;
+                        a {
+                            display: inline-block;
+                        }
+                        img {
+                            margin: 20px 20px 20px 0px;
+                            width: 85px;
+                            height: 85px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
     header {
         .mobile-link {
             display: block;
+            float: right;
+            width: 25%;
         }
         .social {
             display: none;
@@ -60,18 +165,19 @@
             display: none;
         }
     }
+    .mobile-social {
+        display: block;
+    }
     h2 {
         font-size: 30px;
     }
     p {
         font-size: 20px;
     }
-    .section {
-        p {
+    .section p {
             padding: 0px 50px;
-        }
     }
-    .tavling {
+    .landing {
         background-size: 1200px auto;
     }
     .videobutton {
@@ -80,5 +186,51 @@
     .reglerbg {
         margin: 0px;
         padding: 20px;
+    }
+    .regler p {
+        padding: 60px;
+    }
+    .inspiration .carousel .carousel-control.left {
+        left: 0px;
+    }
+    .inspiration .carousel .carousel-control.right {
+        right: 0px;
+    }
+    .modal{
+        .modal-dialog {
+            width: 100%;
+            margin: 0;
+            .modal-content {
+                .close {
+                    top: 0;
+                    right: 0;
+                }
+                .modal-header {
+                    padding-right: 80px;
+                }
+                .modal-body {
+                    .big-image,
+                    .thumbnails {
+                        float: none;
+                        width: 100%;
+                    }
+                    .big-image {
+                        height: auto;
+                    }
+                    .thumbnails {
+                        width: 100%;
+                        margin: 0 auto;
+                        a {
+                            display: inline-block;
+                        }
+                        img {
+                            margin: 20px 20px 20px 0px;
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

@@ -3,15 +3,32 @@
 <head>
     <title>Bird it up!</title>
     <meta charset="utf8"/>
+    <!-- SEARCH OPTIMIZATION -->
+<!-- TODO: DESCRIPTION -->
+    <meta name="description" content="Bird It Up! Bird it up är en inspirationssida med fågeltapeter för dig som gillar inredning. Vi anordnar tävlingar där du kan vinna snygga tapeter, självklart finns det många tapeter med fåglar att välja på."/>
+<!-- TODO: KEYWORDS -->
+    <meta name="keywords" content="Bird It Up, birditup.se, Photowall, tävling, tävla, tapet, fåglar, birds, tapetsera, Medieinstitut, Instagram"/>
+    <!-- FACEBOOK OG -->
+<!-- TODO: FIX LINK TO ICON   -->
+    <meta property="og:image" content="http://birditup.se/img/birditup.png"/>
+    <meta property="og:title" content="Bird It Up! Tävling"/>
+    <meta property="og:description" content="Tävla nu för en chans att vinna ett presentkort värde 2000 kronor till Photowall!"/>
+    <meta property="og:url" content="http://birditup.se"/>
+    <meta property="og:site_name" content="Bird It Up!"/>
+    <!-- VIEWPORT -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+    <!-- ICON -->
+<!-- TODO: FIX FAVICON -->
+    <link rel="icon" type="image/ico" href="http://birditup.se/img/logo.png"/>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/vendor/instafeed.min.js"></script>
 </head>
 
 <body>
@@ -24,76 +41,97 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <div class="logo">logo</div>
-            <div class="social">social</div>
-            <div class="mobile-link">menu</div>
-            <div class="header-navigation">
-                <nav>
-                    <ul>
-                        <li><a href="index.html#">Hem</a></li>
-                        <li><a href="index.html#vinst">Vinst</a></li>
-                        <li><a href="index.html#inspiration">Inspiration</a></li>
-                        <li><a href="index.html#regler">Tävlingsregler</a></li>
-                        <li><a href="index.html#instagram">Tävlingsbidrag</a></li>
-                    </ul>
-                </nav>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html#"><img src="img/headerlogo.png" alt="Bird It Up! logo"/></a>
+                </div>
+                <div class="social">
+                    <a href="http://instagram.com/birditup" class="header-social header-instagram" data-toggle="tooltip" data-placement="auto" title="Följ oss på Instagram!"></a>
+                    <a href="http://www.facebook.com/birditup" class="header-social header-facebook" data-toggle="tooltip" data-placement="auto" title="Följ oss på Facebook!"></a>
+                    <a href="http://www.pinterest.com/birditup/" class="header-social header-pinterest" data-toggle="tooltip" data-placement="auto" title="Följ oss på Pinterest!"></a>
+                </div>
+                <div class="mobile-link"><img src="img/menu.png" alt="Menu"/></div>
+                <div class="header-navigation">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html#">Hem</a></li>
+                            <li><a href="index.html#vinst">Vinst</a></li>
+                            <li><a href="index.html#regler">Tävlingsregler</a></li>
+                            <li><a href="index.html#instagram">Rösta</a></li>
+                            <li><a href="index.html#inspiration">Inspiration</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="index.html#">Hem</a></li>
+                <li><a href="index.html#vinst">Vinst</a></li>
+                <li><a href="index.html#regler">Tävlingsregler</a></li>
+                <li><a href="index.html#instagram">Rösta</a></li>
+                <li><a href="index.html#inspiration">Inspiration</a></li>
+                <li class="mobile-social">
+                    <a href="http://instagram.com/birditup" class="header-instagram"></a>
+                    <a href="http://www.facebook.com/birditup" class="header-facebook"></a>
+                    <a href="http://www.pinterest.com/birditup/" class="header-pinterest"></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End header -->
+
+        <!-- Instagram-->
+        <div class="section container-fluid instagram" id="instagram">
+            <h2>Tävlingsbidrag</h2>
+            <div class="section-line"></div>
+            <p>Rösta på din favorit här! 1 Like = 1 röst. Du kan rösta på flera bilder, dock endast en gång på varje bidrag. Gillamarkeringar på Instagram räknas inte med i röstningsresultatet.</p>
+            <p style="color: red;">Behöver säga att röstning händer via Facebook-like, så man vett att man inte kan ha FB blockerat på sidan. (Annars kommer man inte se röstningsknappen och vet inte varför)</p>
+            <div class="container">
+                <div class="empty-feed"><p style="color:red;">Det finns inga tävlingsbidrag än. Ska du vara först?</p></div>
+                <div id="feed"></div>
+                <div class="clearfix"></div>
+                <a href="feed.html" class="button">Se alla</a>
             </div>
         </div>
-    </header>
-    <nav class="mobile-menu">
-        <ul>
-            <li><a href="index.html#">Hem</a></li>
-            <li><a href="index.html#vinst">Vinst</a></li>
-            <li><a href="index.html#inspiration">Inspiration</a></li>
-            <li><a href="index.html#regler">Tävlingsregler</a></li>
-            <li><a href="index.html#instagram">Tävlingsbidrag</a></li>
-        </ul>
-    </nav>
-    <!-- End Header -->
+        <!-- End Instagram-->
 
-
-
-    <!-- Instagram-->
-    <div class="section container-fluid instagram" id="instagram-full">
-        <h2>Tävlingsbidrag</h2>
-        <div class="section-line"></div>
-        <div class="container">
-            <div id="feed-full"></div>
-            <div id="load-more"><a class="button">load more</a></div>
-        </div>
+        <!-- Footer -->
+        <footer class="section container-fluid footer">
+            <a href="#"><img class="logo" src="img/circlelogo.png" alt="Bird It Up!"/></a>
+            <p class="footertext">Bird It Up! är ett projekt av studenter på <a href="http://medieinstitutet.se/">Medieinstitutet</a>, I samarbete med <a href="http://www.photowall.com/">Photowall</a>.</p>
+            <!-- <p><a href="http://birditup.se"><img src="" alt="Bird It Up!"/></a></p> -->
+            <a href="http://medieinstitutet.se"><img src="img/medieinstitutet.png" alt="Medieinstitutet"/></a>
+            <a href="http://www.photowall.com/"><img src="img/photowall.png" alt="Photowall"/></a>
+            <p>Copyright 2014</pssssssssss>
+        </footer>
+        <!-- End footer -->
     </div>
-    <!-- End Instagram-->
+    <!-- End wrapper -->
 
-    <footer class="section container-fluid footer">
-        <p class="footertext">birditup.se är ett projekt av studenter på <a href="http://medieinstitutet.se/">Medieinstitutet</a>. I samarbete med <a href="http://www.photowall.com/">Photowall</a>.</p>
-        <a href="http://www.photowall.com/"><img src="img/photowall.png" alt="Photowall" /></a>
-        <p>Copyright 2014</p>
-    </footer>
+<!-- Modal for Instagram-images -->
+<div id="loadedOverlay"></div>
+<div id="loadedImage">
+    <div id="loadedImageClose"><p>&times;</p></div>
+    <h3>Rösta på:</h3>
+    <div class="content"></div>
 
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <!-- modal for Vinster-->
-    <div class="modal fade" id="myModal">
-        <!-- modal-dialog -->
-        <div class="modal-dialog">
-            <!-- modal-content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">BIRDELICIOUS - PASTEL</h4>
-                </div>
-                <div class="modal-body">
-                    <p>XXXXXXXXX</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Stäng</button>
-                </div>
-            </div><!-- End of modal-content -->
-        </div><!-- End of modal-dialog -->
-    </div><!-- End of modal -->
-
-<script type="text/javascript" src="js/scripts.js"></script>
+        ga('create', 'UA-51907930-1', 'birditup.se');
+        ga('send', 'pageview');
+    </script>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

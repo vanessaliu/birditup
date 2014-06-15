@@ -1,21 +1,21 @@
-
-
-/* Root
-**************************************/
+/* ========================================================================= */
+/* ROOT
+/* ========================================================================= */
 body, html {
     margin: 0;
     height: 100%;
     color: $textcolor;
-    font-family: 'Roboto', sans-serif;
+    font-family: $basefont;
+    font-weight: 300;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
-/* General
-**************************************/
+/* ========================================================================= */
+/* GENERAL
+/* ========================================================================= */
 #wrapper {
     width: 100%;
 }
@@ -24,7 +24,7 @@ ul {
     text-align: center;
     padding: 60px 0 120px 0;
     p {
-        padding: 0px 300px;
+        padding: 0px 200px;
     }
 }
 .section-line {
@@ -35,12 +35,16 @@ ul {
     margin: 20px auto 40px auto;
     padding: 20px 0;
 }
-/* Typography
-**************************************/
+/* ========================================================================= */
+/* TYPOGRAPHY
+/* ========================================================================= */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: $headingfont;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.6em;
 }
-h2 {
+h1, h2 {
     margin: 40px auto 20px auto;
     text-transform: uppercase;
     font-size: 60px;
@@ -50,105 +54,27 @@ p {
     font-size: 25px;
     color: $textcolor;
     font-weight: 300;
+    line-height: 1.6em;
 }
 a {
+    color: $linkcolor;
+    transition: all 300ms ease-in-out;
     &:hover {
         text-decoration: none;
     }
-}
-/* Navigation
-**************************************/
-header {
-    position: fixed;
-    background: white;
-    width: 100%;
-    height: 80px;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 9000;
-    border-bottom: 1px solid $border-grey;
-    .header-container {
-        margin: 0 auto;
-        max-width: 1600px;
-    }
-    .logo,
-    .mobile-link,
-    .social {
-        height: 80px;
-        width: 15%;
-        padding: 20px;
-    }
-    .logo {
-        float: left;
-    }
-    .mobile-link {
-        float: right;
-        display: none;
-    }
-    .social {
-        float: right;
-    }
-    .header-navigation {
-        margin: 0 auto;
-        padding: 20px;
-        width: 70%;
-        nav {
-            ul {
-                li {
-                    display: inline-block;
-                    padding: 5px 10px;
-                }
-            }
-        }
+    &:hover,
+    &:visited {
+        color: $visitedlink;
     }
 }
-nav ul li a {
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    color: $textcolor;
-    font-size: 1.2em;
+.text-focus {
+    font-weight: 700;
 }
-
-.mobile-menu {
-    display: none;
-    background: white;
-    width: 100%;
-    position: fixed;
-    top: 80px;
-    left: 0;
-    right: 0;
-    z-index: 9000;
-    ul {
-        li {
-            text-align: center;
-            display: block;
-            padding: 15px;
-            border-bottom: 1px solid $border-grey;
-            &:first-of-type {
-                border-top: 1px solid $border-grey;
-            }
-
-        }
-    }
-}
-
-/* Tävling
-**************************************/
-.tavling {
-    background-color: $lightgrey;
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: 1600px auto;
-    background-position: top center;
-    display: table;
-    height: 100%;
-    h2, h3 {
-        padding-top: 20px;
-    }
-}
+/* ========================================================================= */
+/* BUTTONS
+/* ========================================================================= */
 .button {
+    cursor: pointer;
     display: inline-block;
     background-color: $buttoncolor;
     color: $white;
@@ -161,6 +87,7 @@ nav ul li a {
     border: 0;
     text-transform: uppercase;
     transition: all 200ms ease;
+
     &:hover {
         background-color: darken($buttoncolor, 7%);
         color: $white;
@@ -182,65 +109,345 @@ nav ul li a {
         font-size: 5em;
     }
 }
-/* Vinst
-**************************************/
+a.button {
+    color: $white;
+}
+/* ========================================================================= */
+/* NAVIGATION
+/* ========================================================================= */
+header {
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 9000;
+    border-bottom: 1px solid $border-grey;
+    .header-container {
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+    .logo,
+    .social {
+        height: 80px;
+        width: 25%;
+    }
+    .logo {
+        float: left;
+        padding: 15px;
+        opacity: 0.7;
+        transition: all 400ms ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .social {
+        padding: 20px;
+        float: right;
+    }
+    .mobile-link {
+        width: 40%;
+        padding: 24px;
+        float: left;
+        display: none;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    .header-navigation {
+        margin: 0 auto;
+        padding: 20px;
+        width: 50%;
+        nav {
+            ul {
+                li {
+                    display: inline-block;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}
+nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: $linkcolor;
+    font-size: 1.1em;
+}
+.mobile-menu {
+    display: none;
+    background: white;
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 9000;
+    ul {
+        li {
+            text-align: center;
+            padding: 15px;
+            border-bottom: 1px solid $border-grey;
+            font-size: 1em;
+        }
+    }
+}
+.social,
+.mobile-social {
+    a {
+        display: inline-block;
+        margin-left: 15px;
+        width: 36px;
+        height: 36px;
+        background: red;
+        opacity: 0.7;
+        transition: all 400ms ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+        &.header-instagram {
+            background: url(../img/instagram-small.png);
+        }
+        &.header-facebook {
+            background: url(../img/facebook-small.png);
+        }
+        &.header-pinterest {
+            background: url(../img/pinterest-small.png);
+        }
+    }
+}
+.mobile-social {
+    display: none;
+    margin: 0 auto;
+}
+/* ========================================================================= */
+/* LANDINGPAGE
+/* ========================================================================= */
+.landing {
+    background-color: $bluegrey;
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 1600px auto;
+    background-position: top center;
+    display: table;
+    height: 100%;
+    h1 {
+        padding-top: 20px;
+    }
+    h2 {
+        font-size: 2em;
+        text-transform: none;
+    }
+}
+/* ========================================================================= */
+/* VINST
+/* ========================================================================= */
 .vinst {
-    background-color: $white;
+    background-color: $lightgrey;
     min-height: 700px;
     .container {
         margin: 50px auto;
-        img {
-            width: 200px;
-            height: 200px;
-            border: 15px solid $lightgrey;
+        .grid-object {
+            cursor: pointer;
+            position: relative;
             margin-top: 30px;
+            height: 220px;
+            overflow: hidden;
+            img {
+                border: 15px solid $bluegrey;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: 0 auto;
+                padding: 0;
+                width: 220px;
+                height: 220px;
+            }
+        }
+        .overlay {
+            opacity: 0;
+            transition: all 400ms ease-in-out;
+            cursor: pointer;
+            position: absolute;
+            width: 220px;
+            padding: 30px 10px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 15px solid transparent;
+            background: $whiteoverlay;
+            &:hover {
+                opacity: 1;
+                .button {
+                    -webkit-transform: scale(1);
+                }
+            }
+            span {
+                padding: 5px 0px;
+                margin: 0;
+            }
+            .button {
+                transition: all 400ms ease-in-out;
+                -webkit-transform: scale(0.9);
+            }
         }
     }
     .button {
         margin-top: 20px;
     }
+    p {
+        img {
+            margin: 30px 0;
+        }
+    }
 }
-/* Inspiration
-**************************************/
+/* ========================================================================= */
+/* INSPIRATION
+/* ========================================================================= */
 .inspiration {
     background-color: $lightgrey;
     min-height: 700px;
-}
-.inspirationSilde{
-    margin-top: -29px;
-    height: auto;
-    img{
-        border: none;
-        width: 80%;
-        margin-left: 10%;
+    .social-links {
+        position: relative;
+        margin: 0 auto;
+        a {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            width: 64px;
+            height: 64px;
+            background-position: left top;
+            background-repeat: no-repeat;
+            margin: 40px 20px;
+            color: transparent;
+            transition: all 400ms ease-in-out;
+            opacity: 0.6;
+            &.instagram {
+                background-image: url(../img/instagram.png);
+            }
+            &.facebook {
+                background-image: url(../img/facebook.png);
+            }
+            &.pinterest {
+                background-image: url(../img/pinterest.png);
+            }
+            &:hover {
+                opacity: 1;
+            }
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
+    .carousel {
+        margin: 80px auto;
+        width: 100%;
+        overflow: hidden;
+        .container-fluid {
+            padding: 0;
+        }
+        .carousel-inner {
+            img {
+                margin: 0 auto;
+                max-height: 600px;
+            }
+        }
+        .carousel-indicators {
+            bottom: 0;
+            li {
+                width: 12px;
+                height: 12px;
+                border: 0;
+                margin: 5px;
+                background: $transparentwhite;
+                vertical-align: middle;
+                transition: all 300ms ease-in-out;
+                &.active,
+                &:hover {
+                    background: white;
+                }
+            }
+        }
+        .carousel-control {
+            width: 80px;
+            height: 80px;
+            top: 50%;
+            margin-top: -40px;
+            background-image: none;
+            &.left span,
+            &.right span {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 80px;
+                    height: 80px;
+                    background-repeat: no-repeat;
+            }
+            &.left {
+                span {
+                    background-image: url(../img/arrow-left.png);
+                }
+                left: 55px;
+            }
+            &.right {
+                span {
+                    background-image: url(../img/arrow-right.png);
+                }
+                right: 55px;
+            }
+        }
+        .carousel-control .glyphicon-chevron-left,
+        .carousel-control .glyphicon-chevron-right,
+        .carousel-control .icon-prev,
+        .carousel-control .icon-next {
+            font-size: 80px;
+            color: black;
+        }
     }
 }
-.carousel-indicators{
-    bottom: 0;
-    li{
-        border-color:#222;
-    }
-}
-.carousel-indicators .active{
-    background-color:#222;
-}
-/* Regler
-**************************************/
+
+
+/* ========================================================================= */
+/* REGLER
+/* ========================================================================= */
 .regler {
     background: transparent url(../img/pattern.jpg);
     background-repeat: repeat;
     padding: 0;
-    ol {
-        margin: 0 auto;
-        max-width: 800px;
-        li {
-            font-size: 24px;
-            font-family: 'Playfair Display', serif;
-            padding: 10px 0;
+    .rules {
+        h3 {
+            font-size: 3em;
         }
+        p {
+            font-size: 1.4em;
+            // font-family: 'Playfair Display', serif;
+            padding: 10px;
+        }
+        // padding: 10px 0;
     }
+    // ol {
+    //     margin: 0 auto;
+    //     max-width: 800px;
+    //     text-align: left;
+    //     li {
+    //     }
+    // }
     p {
-        padding: 60px 200px;
+        padding: 60px 100px;
     }
 }
 .reglerbg {
@@ -248,137 +455,233 @@ nav ul li a {
     margin: 60px;
     padding: 60px;
 }
-/* Instagram
-**************************************/
+/* ========================================================================= */
+/* INSTAGRAM-BIDRAG
+/* ========================================================================= */
 .instagram {
-    background-color: $lightgrey;
+    background-color: $bluegrey;
     .container {
         max-width: 1200px;
+        margin-top: 40px;
     }
     .button {
         margin-top: 100px;
+        margin-bottom: 0;
     }
     .grid-image {
-        // width: 200px;
-        // float: left;
+        margin-top: 20px;
         position: relative;
+        h4,
+        .fb-like {
+            width: 200px;
+        }
         a {
-            display: block;
             img {
                 width: 200px;
                 height: 200px;
                 border: 0;
                 margin: 0;
-                margin-top: 20px;
             }
         }
-        .fb-like {
-            display: block;
-            width: 200px;
-            margin: 0 auto;
-            // position: absolute;
-            // top: 200px;
-            background: rgba(255,255,255,.7);
-            padding: 20px;
-            text-align: center;
-
-        }
     }
-}
-#instagram {
-    // img {
-    //     width: 306px;
-    //     height: 306px;
-    // }
-    // .fb-like {
-    //     width: 306px;
-    // }
-}
-#instagram-full {
-    // padding-top: 100px;
-    // img {
-    // }
-    // .fb-like {
-    // }
 }
 #load-more {
     .button {
         margin-top: 100px;
     }
 }
-/* Footer
-**************************************/
+.grid-image,
+#loadedImage {
+    h4,
+    .fb-like {
+        background-color: $white;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    h4 {
+        padding: 20px 0 10px 0;
+    }
+    a {
+        display: block;
+    }
+    .fb-like {
+        display: block;
+        padding: 10px 0 20px 0;
+    }
+}
+#loadedImage {
+    display: none;
+    background: $lightgrey;
+    padding: 10px 50px 40px 50px;
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    z-index: 202021;
+    margin-left: -193px;
+    h4,
+    .fb-like {
+        width: 306px;
+    }
+    a {
+        img {
+            width: 306px;
+            height: 306px;
+            border: 0;
+            margin: 0;
+        }
+    }
+    #loadedImageClose {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        height: 40px;
+        width: 40px;
+        right: 10px;
+        background: $white;
+        overflow: hidden;
+        p {
+            font-size: 2em;
+            line-height: 1em;
+            height: 40px;
+            padding: 5px 12px;
+            margin: 0;
+            width: 40px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+    }
+}
+#loadedOverlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 202020;
+    width: 100%;
+    height: 100%;
+    background: $overlay;
+}
+.openInstagramModal {
+    cursor: pointer;
+}
+.empty-feed {
+    display: none;
+}
+/* ========================================================================= */
+/* FOOTER
+/* ========================================================================= */
 .footer {
-    // LAURA: Added the pattern so it can repeat
-    background: transparent url(../img/footerpattern.jpg);
+    background-image: url(../img/footerpattern.jpg);
     background-repeat: repeat;
+    padding: 10px 0 60px 0;
+    h4,
     p {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 30px 0;
     }
     .footertext {
         font-size: 30px;
         font-family: 'Playfair Display', serif;
-        margin-top: 80px;
+    }
+    .logo {
+        margin-top: 60px;
     }
 }
-
-/* Modal
-**************************************/
+/* ========================================================================= */
+/* MODAL
+/* ========================================================================= */
 .modal{
     z-index: 99999;
-    .modal-dialog{
+    .modal-dialog {
         width: 900px;
-    }
-
-    .modal-title{
-        font-family: 'Playfair Display', serif;
-    }
-
-    #main{
-        width: 700px;
-        height: 560px;
-        margin-top: 0px;
-    }
-
-
-    .thumbs{
-        width: 140px;
-        height: 140px;
-        margin-top: 0px;
-    }
-
-    .modal-text{
-        text-align: center;
-        h1{
-            font-family: 'Playfair Display', serif;
-        }
-        p{
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
+        .modal-content {
+            background: $lightgrey;
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+            .close {
+                cursor: pointer;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: $white;
+                overflow: hidden;
+                font-size: 4em;
+                line-height: 35px;
+                width: 50px;
+                height: 50px;
+                padding: 5px 10px;
+                margin: 0;
+                position: absolute;
+                color: $textcolor;
+                font-weight: 300;
+                opacity: 1;
+                z-index: 99990909;
+            }
+            .modal-header {
+                border: 0;
+                h3 {
+                    margin: 0;
+                }
+            }
+            .modal-body {
+                .big-image,
+                .thumbnails {
+                    float: right;
+                }
+                .big-image {
+                    width: 85%;
+                    // width: 700px;
+                    height: 460px;
+                    margin-top: 0px;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .thumbnails {
+                    width: 15%;
+                    margin: 0 auto;
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        margin: 0px 10px 20px 0px;
+                    }
+                }
+                .modal-text {
+                    text-align: center;
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
         }
     }
 }
-.modal-body {
-    .big-image,
-    .thumbnails {
-        float: right;
-    }
-    .big-image {
-        width: 85%;
-    }
-    .thumbnails {
-        width: 15%;
-        margin: 0 auto;
-        img {
-            width: 100px;
-            height: 100px;
-            margin: 0px 10px 20px 10px;
-        }
-    }
+.modal-backdrop {
+    z-index: 99998;
+    background: black;
 }
-/* Coming soon
-**************************************/
+/* ========================================================================= */
+/* TOOLTIPS
+/* ========================================================================= */
+
+.tooltip > .tooltip-inner {
+    font-size: 1.1em;
+}
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: $buttoncolor;
+}
+.tooltip-inner {
+    padding: 5px;
+    background: $buttoncolor;
+}
+/* ========================================================================= */
+/* COMING SOON
+/* ========================================================================= */
 .coming-soon {
     background-image: url(../img/soon.jpg);
     width: 100%;

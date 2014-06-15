@@ -1,19 +1,20 @@
 var birdItUp = {
 
-    template: '<div class="grid-image col-xs-12 col-sm-4 col-md-3"><h4>{{model.user.username}}</h4><a target="_blank" href="{{link}}"><img src="{{image}}" /></a><a class="fb-like" data-href="?vote={{id}}" data-width="200px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></a></div>',
+    template: '<div class="grid-image col-xs-12 col-sm-4 col-md-3"><a class="openInstagramModal" data-id="{{id}}"><img src="{{image}}" /></a><h4><a href="http://instagram.com/{{model.user.username}}">@{{model.user.username}}</a></h4><a class="fb-like" data-href="?vote={{id}}" data-width="200px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></a></div>',
 
     init: function() {
-        // Instagram
-        birdItUp.instaFeedBase();
-        birdItUp.instaFeedFull();
-
-        birdItUp.loadVotedImage();
-
-        // Page functions
+        // Initialize page functions
         birdItUp.mobileMenu();
-
         birdItUp.swapModalImage();
 
+        // Initialize Instagram functions
+        birdItUp.instaFeedBase();
+        birdItUp.instaFeedFull();
+        // birdItUp.feedControls();
+        birdItUp.loadVotedImage();
+        FB.XFBML.parse();
+
+        $('[data-toggle="tooltip"]').tooltip({'placement': 'auto'});
     },
 
     instaFeedBase: function() {
@@ -22,14 +23,19 @@ var birdItUp = {
             get: 'tagged',
             tagName: 'bird',
             clientId: '9cd60ab846f743fcbc7a95d4c058dcc4',
-            resolution: 'thumbnail',
+            resolution: 'low_resolution',
             limit: 12,
             sortBy: 'most-recent',
             target: 'feed',
-            template: this.template
+            template: this.template,
+            after: function() {
+                birdItUp.bindLinkToModal();
+                FB.XFBML.parse()
+            }
         });
         console.log('feed', feed);
         feed.run();
+
     },
 
     instaFeedFull: function() {
@@ -38,13 +44,14 @@ var birdItUp = {
             get: 'tagged',
             tagName: 'bird',
             clientId: '9cd60ab846f743fcbc7a95d4c058dcc4',
-            resolution: 'thumbnail',
+            resolution: 'low_resolution',
             limit: 24,
             sortBy: 'most-recent',
             target: 'feed-full',
             template: this.template,
             after: function() {
-            // disable button if no more results to load
+                birdItUp.bindLinkToModal();
+                // disable button if no more results to load
                 if (!this.hasNext()) {
                   loadButton.setAttribute('disabled', 'disabled');
               }
@@ -57,10 +64,35 @@ var birdItUp = {
         largeFeed.run();
     },
 
-    loadVotedImage: function() {
+    feedControls: function() {
+        // var images = $('#feed').find('.grid-image');
+        // console.log('what is the length', images.length);
+        // if (!images) {
+        //     $('.empty-feed').show();
+        //     console.log('show the text');
+        // } else {
+        //     $('.empty-feed').hide();
+        //     console.log('dont show text there are images');
+        // }
+        // todo: if empty feed, show a div that says that there are no entries
+        // todo: if less than 12 in feed, dont show see all
+    },
+
+    bindLinkToModal: function() {
+        $('.openInstagramModal').on('click', function(event) {
+            event.preventDefault();
+            var mediaId = $(this).attr('data-id');
+            window.history.replaceState( {} , '','?vote=' + mediaId );
+            birdItUp.loadVotedImage(mediaId);
+        });
+    },
+
+
+    loadVotedImage: function(mediaId) {
         var scope = this;
-        var mediaId;
-        mediaId = window.location.search.substring(6);
+        if (typeof mediaId === 'undefined') {
+            mediaId = window.location.search.substring(6);
+        };
         console.log(mediaId.length);
         var clientId = '9cd60ab846f743fcbc7a95d4c058dcc4';
         var url = 'https://api.instagram.com/v1/media/' + mediaId + '?client_id=' + clientId;
@@ -79,15 +111,31 @@ var birdItUp = {
                     newTemplate = newTemplate.replace('{{link}}', data.data.link);
                     newTemplate = newTemplate.replace('{{id}}', data.data.id);
                     newTemplate = newTemplate.replace('{{model.user.username}}', data.data.user.username);
+                    newTemplate = newTemplate.replace('{{model.user.username}}', data.data.user.username);
                     var image = $(newTemplate);
-                    image.appendTo($('body'));
-                    //
+                    $('#loadedImage').slideDown();
+                    $('#loadedOverlay').fadeIn();
+                    $('#loadedImage .content').empty();
+                    image.appendTo($('#loadedImage .content'));
+                    FB.XFBML.parse();
                 },
                 error: function(e) {
                    console.log(e.message);
                 }
             });
         }
+        $('#loadedImageClose').on('click', function(event) {
+            event.preventDefault();
+            $('#loadedOverlay').fadeOut();
+            $('#loadedImage').slideUp();
+            window.history.replaceState({} , '', '?');
+        });
+        $('#loadedOverlay').on('click', function() {
+            $('#loadedOverlay').fadeOut();
+            $('#loadedImage').slideUp();
+            window.history.replaceState({} , '', '?');
+        })
+
     },
 
     mobileMenu: function() {
@@ -106,13 +154,15 @@ var birdItUp = {
         });
     },
 
-    swapModalImage: function(image) {
-        $("main").src = image.href;
-
+    swapModalImage: function(image, id) {
+        $('.thumbnails a').on('click', function(event) {
+            event.preventDefault();
+            var imagePath = $(this).attr('href');
+            $(this).closest('.modal-body').find('.big-image img').attr('src', imagePath);
+        })
     }
-
-
-
 };
 
 birdItUp.init();
+// $('document').ready(function() {
+// });

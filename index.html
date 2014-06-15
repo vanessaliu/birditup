@@ -3,20 +3,32 @@
 <head>
 	<title>Bird it up!</title>
 	<meta charset="utf8"/>
-    <meta property="og:image" content="http://todolio.laurakantti.com/img/appicon.png"/>
-    <meta property="og:title" content="Competition entry"/>
-    <meta property="og:description" content="This is the content"/>
-    <!-- <meta property="og:url" content="http://laurakantti.com/birditup2014inprogress/"/> -->
+    <!-- SEARCH OPTIMIZATION -->
+<!-- TODO: DESCRIPTION -->
+    <meta name="description" content="Bird It Up! Bird it up är en inspirationssida med fågeltapeter för dig som gillar inredning. Vi anordnar tävlingar där du kan vinna snygga tapeter, självklart finns det många tapeter med fåglar att välja på."/>
+<!-- TODO: KEYWORDS -->
+    <meta name="keywords" content="Bird It Up, birditup.se, Photowall, tävling, tävla, tapet, fåglar, birds, tapetsera, Medieinstitut, Instagram"/>
+    <!-- FACEBOOK OG -->
+<!-- TODO: FIX LINK TO ICON   -->
+    <meta property="og:image" content="http://birditup.se/img/birditup.png"/>
+    <meta property="og:title" content="Bird It Up! Tävling"/>
+    <meta property="og:description" content="Tävla nu för en chans att vinna ett presentkort värde 2000 kronor till Photowall!"/>
+    <meta property="og:url" content="http://birditup.se"/>
     <meta property="og:site_name" content="Bird It Up!"/>
+    <!-- VIEWPORT -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+    <!-- ICON -->
+<!-- TODO: FIX FAVICON -->
+    <link rel="icon" type="image/ico" href="http://birditup.se/img/logo.png"/>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/vendor/instafeed.min.js"></script>
 </head>
 
 <body>
@@ -28,22 +40,30 @@
       js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Wrapper -->
     <div id="wrapper">
 
         <!-- Header -->
         <header>
             <div class="header-container">
-                <div class="logo">logo</div>
-                <div class="social">social</div>
-                <div class="mobile-link">menu</div>
+                <div class="logo">
+                    <a href="#"><img src="img/headerlogo.png" alt="Bird It Up! logo"/></a>
+                </div>
+                <div class="social">
+                    <a href="http://instagram.com/birditup" class="header-social header-instagram" data-toggle="tooltip" data-placement="auto" title="Följ oss på Instagram!"></a>
+                    <a href="http://www.facebook.com/birditup" class="header-social header-facebook" data-toggle="tooltip" data-placement="auto" title="Följ oss på Facebook!"></a>
+                    <a href="http://www.pinterest.com/birditup/" class="header-social header-pinterest" data-toggle="tooltip" data-placement="auto" title="Följ oss på Pinterest!"></a>
+                </div>
+                <div class="mobile-link"><img src="img/menu.png" alt="Menu"/></div>
                 <div class="header-navigation">
                     <nav>
                         <ul>
                             <li><a href="#">Hem</a></li>
                             <li><a href="#vinst">Vinst</a></li>
-                            <li><a href="#inspiration">Inspiration</a></li>
                             <li><a href="#regler">Tävlingsregler</a></li>
-                            <li><a href="#instagram">Tävlingsbidrag</a></li>
+                            <li><a href="#instagram">Rösta</a></li>
+                            <li><a href="#inspiration">Inspiration</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -53,120 +73,124 @@
             <ul>
                 <li><a href="#">Hem</a></li>
                 <li><a href="#vinst">Vinst</a></li>
-                <li><a href="#inspiration">Inspiration</a></li>
                 <li><a href="#regler">Tävlingsregler</a></li>
-                <li><a href="#instagram">Tävlingsbidrag</a></li>
+                <li><a href="#instagram">Rösta</a></li>
+                <li><a href="#inspiration">Inspiration</a></li>
+                <li class="mobile-social">
+                    <a href="http://instagram.com/birditup" class="header-instagram"></a>
+                    <a href="http://www.facebook.com/birditup" class="header-facebook"></a>
+                    <a href="http://www.pinterest.com/birditup/" class="header-pinterest"></a>
+                </li>
             </ul>
         </nav>
         <!-- End header -->
 
-    	<!-- Tävlingsnamn -->
-    	<div class="section container-fluid tavling">
-            <h2>Bird It Up!</h2>
-            <!-- <div class="section-line"></div> -->
-            <h3>Make a bird, not war.</h3>
+    	<!-- Landing -->
+    	<div class="section container-fluid landing">
+            <h1>Bird It Up!</h1>
+            <!-- <h2>#birditup2014</h2> -->
             <a class="button videobutton">
                 <span class="glyphicon glyphicon-play-circle"></span>
                 <span>text här</span>
             </a>
-            <a class="button">Så tävlar du</a>
-            <a class="button">Alla bidrag</a>
+            <a href="#regler" class="button">Så tävlar du</a>
+            <a href="#instagram" class="button">Tävlingsbidrag</a>
     	</div>
-        <!-- End Tävlingsnamn -->
+        <!-- End Landing -->
 
-    	<!-- Vinst-->
-    	<div class="section container-fluid vinst" id="vinst">
+        <!-- Vinst-->
+        <div class="section container-fluid vinst" id="vinst">
             <h2>Vad vinner man?</h2>
-    		<div class="section-line"></div>
-            <p>Vinnaren får ett presentkort till ett värde av 2000 kronor. Presentkortet gäller alla tapeter i Photowalls sortiment.</p>
-            <p>Bird it up! Här är våra favoriter:</p>
+            <div class="section-line"></div>
+            <p>Vinnaren får ett presentkort till ett värde av 2000 kronor. Presentkortet gäller alla tapeter i Photowalls sortiment.<br/>
+            Bird it up! Här är våra favoriter:</p>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="modal" data-target="#myModal">
-                        <img src="img/vinster/vinst1.png">
+                    <div class="grid-object col-xs-12 col-sm-6 col-md-3" data-toggle="modal" data-target="#myModal1">
+                        <img src="img/vinster/powerlines-grey.jpg" alt="Powerlines Grey Kaja Solgaard"/>
+                        <div class="overlay">
+                            <!-- <h3>Powerlines - Grey</h3> -->
+                            <div class="button"><span>visa mer</span></div>
                         </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <img src="img/vinster/vinst2.png">
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <img src="img/vinster/vinst3.png">
+                    <div class="grid-object col-xs-12 col-sm-6 col-md-3" data-toggle="modal" data-target="#myModal2">
+                        <img src="img/vinster/nu-agency--molly-bartling-early-in-vietnam-1.jpg" alt="Molly Bartling - Early in Vietnam 1 NU Agency"/>
+                        <div class="overlay">
+                            <!-- <h3>Molly Bartling - Early in Vietnam 1</h3> -->
+                            <div class="button"><span>visa mer</span></div>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <img src="img/vinster/vinst4.png">
+                    <div class="grid-object col-xs-12 col-sm-6 col-md-3" data-toggle="modal" data-target="#myModal3">
+                        <img src="img/vinster/madame-de-pompadour-silver.jpg" alt="Madame De Pompadour Silver Scandinavian Surface"/>
+                        <div class="overlay">
+                            <!-- <h3>Madame De Pompadour Silver</h3> -->
+                            <div class="button"><span>visa mer</span></div>
+                        </div>
+                    </div>
+                    <div class="grid-object col-xs-12 col-sm-6 col-md-3" data-toggle="modal" data-target="#myModal4">
+                        <img src="img/vinster/twiggy-and-bird-gentle.jpg" alt="Twiggy and Bird Binny Talib">
+                        <div class="overlay"/>
+                            <!-- <h3>Twiggy and Bird</h3> -->
+                            <div class="button"><span>visa mer</span></div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <img src="img/vinster/vinst5.png">
+                    <div class="grid-object col-xs-12 col-sm-6 col-md-3" data-toggle="modal" data-target="#myModal5">
+                        <img src="img/vinster/botanical-life.jpg" alt="Botanical Life"/>
+                        <div class="overlay">
+                            <!-- <h3>Botanical Life</h3> -->
+                            <div class="button"><span>visa mer</span></div>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <img src="img/vinster/vinst6.png">
+                    <div class="grid-object col-xs-12 col-sm-6 col-md-3" data-toggle="modal" data-target="#myModal6">
+                        <img src="img/vinster/pattern-magpie.jpg" alt="Pattern Magpie Scandinavian Surface"/>
+                        <div class="overlay">
+                            <!-- <h3>Pattern Magpie</h3> -->
+                            <div class="button"><span>visa mer</span></div>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <img src="img/vinster/vinst1.png">
+                    <div class="grid-object col-xs-12 col-sm-6 col-md-3" data-toggle="modal" data-target="#myModal7">
+                        <img src="img/vinster/budgies-offwhite-lila-blad.jpg" alt="Budgies Offwhite - Small Nadja Wedin Design"/>
+                        <div class="overlay">
+                            <!-- <h3>Budgies Offwhite - Small</h3> -->
+                            <div class="button"><span>visa mer</span></div>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <img src="img/vinster/vinst2.png">
-                    </div>
-                </div>
-            </div>
-            <p>Hitta din favorittapet: </p>
-            <!-- <a href="http://www.photowall.com/" class="button">www.photowall.se</a>
-            <p>I samarbete med:</p> -->
-            <a href="http://www.photowall.com/"><img src="img/pw-text.png" alt="Photowall" /></a>
-    	</div>
-    	</div>
-        <!-- End Vinst-->
-
-    	<!-- Inspiration-->
-    	<div class="section container-fluid inspiration" id="inspiration">
-            <h2>Inspiration</h2>
-    		<div class="section-line"></div>
-            <div id="myCarousel" class="carousel slide">
-            <div class="container">
-                <ol class="carousel-indicators">
-                    <li class="active" data-target="#myCarousel" data-silde-to="0"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item active  img-responsive inspirationSilde">
-                        <img src="img/example1.jpg" alt="inspiration">
-                    </div>
-                    <div class="item  img-responsive inspirationSilde">
-                        <img src="img/example2.jpg" alt="inspiration">
-                    </div>
-                    <div class="item  img-responsive inspirationSilde">
-                        <img src="img/example3.jpg" alt="inspiration">
-                    </div>
-                    <div class="item  img-responsive inspirationSilde">
-                        <img src="img/example4.jpg" alt="inspiration">
+                    <div class="grid-object col-xs-12 col-sm-6 col-md-3" data-toggle="modal" data-target="#myModal8">
+                        <img src="img/vinster/birdelicious-turquoise.jpg" alt="Birdelicious – Turquoise Lost Bird Design"/>
+                        <div class="overlay">
+                            <!-- <h3>Birdelicious – Turquoise</h3> -->
+                            <div class="button"><span>visa mer</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="icon-prev"></span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="icon-next"></span>
-            </a>
+            <p>Hitta din favorittapet på Photowalls hemsida:</p>
+            <p><a href="http://www.photowall.com/"><img src="img/pw-text.png" alt="Photowall"/></a></p/>
         </div>
-    	</div>
-        <!-- End Inspiration-->
+        <!-- End vinst -->
 
     	<!-- Regler-->
     	<div class="section container-fluid regler" id="regler">
     		<div class="reglerbg">
                 <h2>Så tävlar du</h2>
     			<div class="section-line"></div>
-        		<ol>
-        			<li>Kraxa, flaxa, härma. Porträttera en fågel på något sätt – vilket som helst. Var kreativ! Baka en kaka formad som en fågel, gör fågeldansen eller sjung en sång om en fågel. Din fantasi sätter gränserna. </li>
-        			<li>Fånga på bild eller i ett videoklipp. Lägg ut på Instagram och tagga ditt bidrag med #birditup2014 (kom ihåg att öppna upp ditt konto om det är privat).</li>
-        			<li>Alla bidrag kommer visas här på birditup.se där även röstning äger rum. 1 like = 1 röst. En jury kommer utse vinner av de 5 bidrag som fått flest röster.</li>
-                    <li>Tävlingen pågår fram [FYLLA IN]</li>
-        		</ol>
-    			<p>Tävlingsvillkor (text inte färdig). Eventuell vinstskatt betalas av vinnaren. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        		<div class="container-fluid">
+                    <div class="rules col-xs-12 col-md-4">
+                        <h3>1.</h3>
+                        <p>Kraxa, flaxa, härma. <span class="text-focus">Porträttera en fågel på något sätt – vilket som helst.</span> Var kreativ! Baka en kaka formad som en fågel, gör fågeldansen eller sjung en sång om en fågel. Din fantasi sätter gränserna.</p>
+                    </div>
+                    <div class="rules col-xs-12 col-md-4">
+                        <h3>2.</h3>
+                        <p>Fånga på <span class="text-focus">bild</span> eller i ett <span class="text-focus">videoklipp</span>. Lägg ut på Instagram och tagga ditt bidrag med <span class="text-focus">#birditup2014</span> (kom ihåg att öppna upp ditt konto om det är privat).</p>
+                    </div>
+                    <div class="rules col-xs-12 col-md-4">
+                        <h3>3.</h3>
+                        <p>Alla bidrag kommer visas här på <span class="text-focus">birditup.se</span> där även röstning äger rum. <span class="text-focus">1 like = 1 röst.</span> En jury kommer utse vinner av de 5 bidrag som fått flest röster.</p>
+                    </div>
+                </div>
+    			<p style="color: red;">SKICKA INNAN / VINSTSKATT / VINNAREN KOMMER ATT KONTAKTAS ETC. Tävlingsvillkor (text inte färdig). Eventuell vinstskatt betalas av vinnaren. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna est, pellentesque scelerisque dolor vel, consequat varius velit. Morbi pellentesque neque et turpis vehicula, vitae laoreet est dictum.</p>
     		</div>
     	</div>
         <!-- End Regler-->
@@ -175,8 +199,10 @@
     	<div class="section container-fluid instagram" id="instagram">
             <h2>Tävlingsbidrag</h2>
     		<div class="section-line"></div>
-            <p>Senaste</p>
+            <p>Rösta på din favorit här! 1 Like = 1 röst. Du kan rösta på flera bilder, dock endast en gång på varje bidrag. Gillamarkeringar på Instagram räknas inte med i röstningsresultatet.</p>
+            <p style="color: red;">Behöver säga att röstning händer via Facebook-like, så man vett att man inte kan ha FB blockerat på sidan. (Annars kommer man inte se röstningsknappen och vet inte varför)</p>
             <div class="container">
+                <div class="empty-feed"><p style="color:red;">Det finns inga tävlingsbidrag än. Ska du vara först?</p></div>
                 <div id="feed"></div>
                 <div class="clearfix"></div>
                 <a href="feed.html" class="button">Se alla</a>
@@ -184,50 +210,296 @@
     	</div>
         <!-- End Instagram-->
 
-    	<footer class="section container-fluid footer">
-            <p class="footertext">birditup.se är ett projekt av studenter på <a href="http://medieinstitutet.se/">Medieinstitutet</a>. I samarbete med <a href="http://www.photowall.com/">Photowall</a>.</p>
-            <a href="http://www.photowall.com/"><img src="img/photowall.png" alt="Photowall" /></a>
-            <p>Copyright 2014</p>
-    	</footer>
-
-    </div>
-
-    <div class="modal fade" id="myModal">
-        <!-- modal-dialog -->
-        <div class="modal-dialog">
-            <!-- modal-content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Birdelicious - Pastel</h4>
+        <!-- Inspiration-->
+        <div class="section container-fluid inspiration" id="inspiration">
+            <h2>Inspiration</h2>
+            <div class="section-line"></div>
+            <p style="color:red;">Inspirationstext här</p>
+            <div id="myCarousel" class="carousel slide">
+                <div class="container-fluid">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#myCarousel" data-silde-to="0"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active img-responsive">
+                            <img src="img/example1.jpg" alt="Inspiration"/>
+                        </div>
+                        <div class="item img-responsive">
+                            <img src="img/example2.jpg" alt="Inspiration"/>
+                        </div>
+                        <div class="item img-responsive">
+                            <img src="img/example3.jpg" alt="Inspiration"/>
+                        </div>
+                        <div class="item img-responsive">
+                            <img src="img/example4.jpg" alt="Inspiration"/>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <div class="big-image">
-                        <img id="main" class="pull-right" src="img/modal/1-big.jpg">
-                    </div>
-                    <div class="thumbnails">
-                        <a href="img/modal/1-big.jpg" onclick="swap(this); return false;"><img class="thumbs" src="img/modal/1-small.png" alt="1-small"></a>
-                        <a href="img/modal/2-big.jpg" onclick="swap(this); return false;"><img class="thumbs" src="img/modal/2-small.png" alt="2-small"></a>
-                        <a href="img/modal/3-big.jpg" onclick="swap(this); return false;"><img class="thumbs" src="img/modal/3-small.png" alt="3-small"></a>
-                        <a href="img/modal/4-big.jpg" onclick="swap(this); return false;"><img class="thumbs" src="img/modal/4-small.png" alt="4-small"></a>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="modal-text">
-                    <h1>Tapetnamn av tapetdesigner</h1>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span></span>
+                </a>
+            </div>
+            <p>För mer inspiration, följ oss på:</p>
+            <div class="social-links">
+                <a href="http://instagram.com/birditup" class="instagram"><span></span></a>
+                <a href="http://www.facebook.com/birditup" class="facebook"><span></span></a>
+                <a href="http://www.pinterest.com/birditup/" class="pinterest"><span></span></a>
+            </div>
+        </div>
+        <!-- End Inspiration-->
+
+        <!-- Footer -->
+        <footer class="section container-fluid footer">
+            <a href="#"><img class="logo" src="img/logo.png" alt="Bird It Up!"/></a>
+            <p class="footertext">Bird It Up! är ett projekt av studenter på <a href="http://medieinstitutet.se/">Medieinstitutet</a>, I samarbete med <a href="http://www.photowall.com/">Photowall</a>.</p>
+            <!-- <p><a href="http://birditup.se"><img src="" alt="Bird It Up!"/></a></p> -->
+            <a href="http://medieinstitutet.se"><img src="img/medieinstitutet.png" alt="Medieinstitutet"/></a>
+            <a href="http://www.photowall.com/"><img src="img/photowall.png" alt="Photowall"/></a>
+            <p>Copyright 2014</pssssssssss>
+        </footer>
+        <!-- End footer -->
+    </div>
+    <!-- End wrapper -->
+
+<!-- Modal for Instagram-images -->
+<div id="loadedOverlay"></div>
+<div id="loadedImage">
+    <div id="loadedImageClose"><p>&times;</p></div>
+    <h3>Rösta på:</h3>
+    <div class="content"></div>
+    <!-- <p>Spara länken och dela på Facebook!</p> -->
+</div>
+<!-- End modal -->
+
+<!-- Modals for vinstbilder -->
+<div class="modal fade" id="myModal1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Powerlines – Grey | Designer: Kaja Solgaard</h3>
+                <p class="close" data-dismiss="modal" aria-hidden="true">&times;</p>
+            </div>
+            <div class="modal-body">
+                <div class="big-image">
+                    <img id="main" class="pull-right" src="img/vinster/modal/powerlines-grey/powerlines-grey-vardagsrum.jpg" alt="Powerlines Grey by Kaja Solgaard. Decorative wallpaper image"/>
+                </div>
+                <div class="thumbnails">
+                    <a href="img/vinster/modal/powerlines-grey/powerlines-grey-vardagsrum.jpg"><img class="thumbs" src="img/vinster/modal/powerlines-grey/powerlines-grey-vardagsrum-small.png" alt="Powerlines Grey by Kaja Solgaard. Decorative wallpaper image"></a>
+                    <a href="img/vinster/modal/powerlines-grey/powerlines-grey-kok.jpg"><img class="thumbs" src="img/vinster/modal/powerlines-grey/powerlines-grey-kok-small.png" alt="Powerlines Grey by Kaja Solgaard. Decorative wallpaper image"></a>
+                    <a href="img/vinster/modal/powerlines-grey/powerlines-grey-sovrum.jpg"><img class="thumbs" src="img/vinster/modal/powerlines-grey/powerlines-grey-sovrum-small.png" alt="Powerlines Grey by Kaja Solgaard. Decorative wallpaper image"></a>
+                    <a href="img/vinster/modal/powerlines-grey/powerlines-grey-vardagsrum2.jpg"><img class="thumbs" src="img/vinster/modal/powerlines-grey/powerlines-grey-vardagsrum2-small.png" alt="Powerlines Grey by Kaja Solgaard. Decorative wallpaper image"></a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-text">
+                    <p>Norwegian designer Kaja Soolgard’s work is influenced by disciplines like sculpture and painting. Her design has both an artistic and personal approach. Kaja trained at Einar Granum School of Art in Oslo, Norway and at Beckmans College of design in Stockholm, Sweden.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Molly Bartling – Early in Vietnam 1 | Designer: NU Agency</h3>
+                <p class="close" data-dismiss="modal" aria-hidden="true">&times;</p>
+            </div>
+            <div class="modal-body">
+                <div class="big-image">
+                    <img id="main" class="pull-right" src="img/vinster/modal/nu-agency--molly-bartling-early-in-vietnam-1/nu-agency--molly-bartling-early-in-vietnam-1-1.jpg" alt="Molly Bartling - Early in Vietnam 1 by NU Agency. Decorative wallpaper image"/>
+                </div>
+                <div class="thumbnails">
+                    <a href="img/vinster/modal/nu-agency--molly-bartling-early-in-vietnam-1/nu-agency--molly-bartling-early-in-vietnam-1-1.jpg"><img class="thumbs" src="img/vinster/modal/nu-agency--molly-bartling-early-in-vietnam-1/nu-agency--molly-bartling-early-in-vietnam-1-1-small.png" alt="Molly Bartling - Early in Vietnam 1 by NU Agency. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/nu-agency--molly-bartling-early-in-vietnam-1/nu-agency--molly-bartling-early-in-vietnam-1-2.jpg"><img class="thumbs" src="img/vinster/modal/nu-agency--molly-bartling-early-in-vietnam-1/nu-agency--molly-bartling-early-in-vietnam-1-2-small.png" alt="Molly Bartling - Early in Vietnam 1 by NU Agency. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/nu-agency--molly-bartling-early-in-vietnam-1/nu-agency--molly-bartling-early-in-vietnam-1-3.jpg"><img class="thumbs" src="img/vinster/modal/nu-agency--molly-bartling-early-in-vietnam-1/nu-agency--molly-bartling-early-in-vietnam-1-3-small.png" alt="Molly Bartling - Early in Vietnam 1 by NU Agency. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/nu-agency--molly-bartling-early-in-vietnam-1/nu-agency--molly-bartling-early-in-vietnam-1-4.jpg"><img class="thumbs" src="img/vinster/modal/nu-agency--molly-bartling-early-in-vietnam-1/nu-agency--molly-bartling-early-in-vietnam-1-4-small.png" alt="Molly Bartling - Early in Vietnam 1 by NU Agency. Decorative wallpaper image"/></a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-text">
+                    <p>Stockholm based illustration agency - NU Agency - brings together some of the most creative and innovative international and Swedish freelance illustrators. Their talents work within the field of typography, graphic design, fashion, image making and traditional illustration.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Madame De Pompadour Silver | Designer: Scandinavian Surface</h3>
+                <p class="close" data-dismiss="modal" aria-hidden="true">&times;</p>
+            </div>
+            <div class="modal-body">
+                <div class="big-image">
+                    <img id="main" class="pull-right" src="img/vinster/modal/madame-de-pompadour-silver/madame-de-pompadour-silver-1.jpg" alt="Madame De Pompadour Silver by Scandinavian Surface. Decorative wallpaper image"/>
+                </div>
+                <div class="thumbnails">
+                    <a href="img/vinster/modal/madame-de-pompadour-silver/madame-de-pompadour-silver-1.jpg"><img class="thumbs" src="img/vinster/modal/madame-de-pompadour-silver/madame-de-pompadour-silver-1-small.png" alt="Madame De Pompadour Silver by Scandinavian Surface. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/madame-de-pompadour-silver/madame-de-pompadour-silver-2.jpg"><img class="thumbs" src="img/vinster/modal/madame-de-pompadour-silver/madame-de-pompadour-silver-2-small.png" alt="Madame De Pompadour Silver by Scandinavian Surface. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/madame-de-pompadour-silver/madame-de-pompadour-silver-3.jpg"><img class="thumbs" src="img/vinster/modal/madame-de-pompadour-silver/madame-de-pompadour-silver-3-small.png" alt="Madame De Pompadour Silver by Scandinavian Surface. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/madame-de-pompadour-silver/madame-de-pompadour-silver-4.jpg"><img class="thumbs" src="img/vinster/modal/madame-de-pompadour-silver/madame-de-pompadour-silver-4-small.png" alt="Madame De Pompadour Silver by Scandinavian Surface. Decorative wallpaper image"/></a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-text">
+                    <p>Norwegian Scandinavian Surface create design with inspiration from nature’s different shapes and colours. Beauty in torn and withered flora with exciting glimpses of moose and eagles. Scandinavian Surface always seek to capture the Norwegian freshness.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal4">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Twiggy and Bird | Designer: Binny Talib</h3>
+                <p class="close" data-dismiss="modal" aria-hidden="true">&times;</p>
+            </div>
+            <div class="modal-body">
+                <div class="big-image">
+                    <img id="main" class="pull-right" src="img/vinster/modal/twiggy-and-bird-gentle/twiggy-and-bird-gentle-1.jpg" alt="Twiggy and Bird by Binny Talib. Decorative wallpaper image"/>
+                </div>
+                <div class="thumbnails">
+                    <a href="img/vinster/modal/twiggy-and-bird-gentle/twiggy-and-bird-gentle-1.jpg"><img class="thumbs" src="img/vinster/modal/twiggy-and-bird-gentle/twiggy-and-bird-gentle-1-small.png" alt="Twiggy and Bird by Binny Talib. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/twiggy-and-bird-gentle/twiggy-and-bird-gentle-2.jpg"><img class="thumbs" src="img/vinster/modal/twiggy-and-bird-gentle/twiggy-and-bird-gentle-2-small.png" alt="Twiggy and Bird by Binny Talib. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/twiggy-and-bird-gentle/twiggy-and-bird-gentle-3.jpg"><img class="thumbs" src="img/vinster/modal/twiggy-and-bird-gentle/twiggy-and-bird-gentle-3-small.png" alt="Twiggy and Bird by Binny Talib. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/twiggy-and-bird-gentle/twiggy-and-bird-gentle-4.jpg"><img class="thumbs" src="img/vinster/modal/twiggy-and-bird-gentle/twiggy-and-bird-gentle-4-small.png" alt="Twiggy and Bird by Binny Talib. Decorative wallpaper image"/></a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-text">
+                    <p>Binny Talib is an Australian designer and Illustrator. She graduated Visual Communications with a Design degree with honors from the University of Technology Sydney in 1997. Her work can be found across a range of disciplines around the world, from children’s books to clothing lines. She is inspired by earthy, organic colors and shapes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal5">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Botanical Life</h3>
+                <p class="close" data-dismiss="modal" aria-hidden="true">&times;</p>
+            </div>
+            <div class="modal-body">
+                <div class="big-image">
+                    <img id="main5" class="pull-right" src="img/vinster/modal/botanical-life/botanical-life-1.jpg" alt="Botanical Life. Decorative wallpaper image"/>
+                </div>
+                <div class="thumbnails">
+                    <a href="img/vinster/modal/botanical-life/botanical-life-1.jpg" onclick="swap5(this); return false;"><img class="thumbs" src="img/vinster/modal/botanical-life/botanical-life-1-small.png" alt="Botanical Life. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/botanical-life/botanical-life-2.jpg" onclick="swap5(this); return false;"><img class="thumbs" src="img/vinster/modal/botanical-life/botanical-life-2-small.png" alt="Botanical Life. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/botanical-life/botanical-life-3.jpg" onclick="swap5(this); return false;"><img class="thumbs" src="img/vinster/modal/botanical-life/botanical-life-3-small.png" alt="Botanical Life. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/botanical-life/botanical-life-4.jpg" onclick="swap5(this); return false;"><img class="thumbs" src="img/vinster/modal/botanical-life/botanical-life-4-small.png" alt="Botanical Life. Decorative wallpaper image"/></a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-text">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal6">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Pattern Magpie | Designer: Scandinavian Surface</h3>
+                <p class="close" data-dismiss="modal" aria-hidden="true">&times;</p>
+            </div>
+            <div class="modal-body">
+                <div class="big-image">
+                    <img id="main6" class="pull-right" src="img/vinster/modal/pattern-magpie/pattern-magpie-1.jpg" alt="Pattern Magpie by Scandinavian Surface. Decorative wallpaper image"/>
+                </div>
+                <div class="thumbnails">
+                    <a href="img/vinster/modal/pattern-magpie/pattern-magpie-1.jpg"><img class="thumbs" src="img/vinster/modal/pattern-magpie/pattern-magpie-1-small.png" alt="Pattern Magpie by Scandinavian Surface. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/pattern-magpie/pattern-magpie-2.jpg"><img class="thumbs" src="img/vinster/modal/pattern-magpie/pattern-magpie-2-small.png" alt="Pattern Magpie by Scandinavian Surface. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/pattern-magpie/pattern-magpie-3.jpg"><img class="thumbs" src="img/vinster/modal/pattern-magpie/pattern-magpie-3-small.png" alt="Pattern Magpie by Scandinavian Surface. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/pattern-magpie/pattern-magpie-4.jpg"><img class="thumbs" src="img/vinster/modal/pattern-magpie/pattern-magpie-4-small.png" alt="Pattern Magpie by Scandinavian Surface. Decorative wallpaper image"/></a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-text">
+                    <p>Norwegian Scandinavian Surface create design with inspiration from nature’s different shapes and colours. Beauty in torn and withered flora with exciting glimpses of moose and eagles. Scandinavian Surface always seek to capture the Norwegian freshness.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal7">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Budgies Offwhite - Small | Designer: Nadja Wedin Design</h3>
+                <p class="close" data-dismiss="modal" aria-hidden="true">&times;</p>
+            </div>
+            <div class="modal-body">
+                <div class="big-image">
+                    <img id="main7" class="pull-right" src="img/vinster/modal/budgies-offwhite-lila-blad/budgies-offwhite-lila-blad-1.jpg" alt="Budgies Offwhite Small by Nadja Wedin Design. Decorative wallpaper image"/>
+                </div>
+                <div class="thumbnails">
+                    <a href="img/vinster/modal/budgies-offwhite-lila-blad/budgies-offwhite-lila-blad-1.jpg"><img class="thumbs" src="img/vinster/modal/budgies-offwhite-lila-blad/budgies-offwhite-lila-blad-1-small.png" alt="Budgies Offwhite Small by Nadja Wedin Design. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/budgies-offwhite-lila-blad/budgies-offwhite-lila-blad-2.jpg"><img class="thumbs" src="img/vinster/modal/budgies-offwhite-lila-blad/budgies-offwhite-lila-blad-2-small.png" alt="Budgies Offwhite Small by Nadja Wedin Design. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/budgies-offwhite-lila-blad/budgies-offwhite-lila-blad-3.jpg"><img class="thumbs" src="img/vinster/modal/budgies-offwhite-lila-blad/budgies-offwhite-lila-blad-3-small.png" alt="Budgies Offwhite Small by Nadja Wedin Design. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/budgies-offwhite-lila-blad/budgies-offwhite-lila-blad-4.jpg"><img class="thumbs" src="img/vinster/modal/budgies-offwhite-lila-blad/budgies-offwhite-lila-blad-4-small.png" alt="Budgies Offwhite Small by Nadja Wedin Design. Decorative wallpaper image"/></a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-text">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="myModal8">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Birdelicious – Turquoise | Designer: Lost Bird Design</h3>
+                <p class="close" data-dismiss="modal" aria-hidden="true">&times;</p>
+            </div>
+            <div class="modal-body">
+                <div class="big-image">
+                    <img id="main8" class="pull-right" src="img/vinster/modal/birdelicious-turquoise/birdelicious-turquoise-1.jpg" alt="Birdelicious Turqoise by Lost Bird Design. Decorative wallpaper image"/>
+                </div>
+                <div class="thumbnails">
+                    <a href="img/vinster/modal/birdelicious-turquoise/birdelicious-turquoise-1.jpg"><img class="thumbs" src="img/vinster/modal/birdelicious-turquoise/birdelicious-turquoise-1-small.png" alt="Birdelicious Turqoise by Lost Bird Design. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/birdelicious-turquoise/birdelicious-turquoise-2.jpg"><img class="thumbs" src="img/vinster/modal/birdelicious-turquoise/birdelicious-turquoise-2-small.png" alt="Birdelicious Turqoise by Lost Bird Design. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/birdelicious-turquoise/birdelicious-turquoise-3.jpg"><img class="thumbs" src="img/vinster/modal/birdelicious-turquoise/birdelicious-turquoise-3-small.png" alt="Birdelicious Turqoise by Lost Bird Design. Decorative wallpaper image"/></a>
+                    <a href="img/vinster/modal/birdelicious-turquoise/birdelicious-turquoise-4.jpg"><img class="thumbs" src="img/vinster/modal/birdelicious-turquoise/birdelicious-turquoise-4-small.png" alt="Birdelicious Turqoise by Lost Bird Design. Decorative wallpaper image"/></a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End modals -->
 
-                </div> <!--End of modal body-->
-            </div><!-- End of modal-content -->
-        </div><!-- End of modal-dialog -->
-    </div><!-- End of modal -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
- <script type="text/javascript">
-     function swap(image) {
-         document.getElementById("main").src = image.href;
-     }
- </script>
-
-<script type="text/javascript" src="js/scripts.js"></script>
+        ga('create', 'UA-51907930-1', 'birditup.se');
+        ga('send', 'pageview');
+    </script>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
