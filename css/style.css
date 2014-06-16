@@ -104,10 +104,15 @@ a:hover, a:visited {
   font-weight: 700;
 }
 
+/* line 79, ../scss/_main.scss */
+.smallertext {
+  font-size: 20px;
+}
+
 /* ========================================================================= */
 /* BUTTONS
 /* ========================================================================= */
-/* line 82, ../scss/_main.scss */
+/* line 85, ../scss/_main.scss */
 .button {
   cursor: pointer;
   display: inline-block;
@@ -123,14 +128,14 @@ a:hover, a:visited {
   text-transform: uppercase;
   transition: all 200ms ease;
 }
-/* line 97, ../scss/_main.scss */
+/* line 100, ../scss/_main.scss */
 .button:hover {
   background-color: rgba(141, 157, 174, 0.8);
   color: white;
   text-decoration: none;
 }
 
-/* line 104, ../scss/_main.scss */
+/* line 107, ../scss/_main.scss */
 .videobutton {
   width: 600px;
   height: 300px;
@@ -138,17 +143,17 @@ a:hover, a:visited {
   margin: 40px auto 40px auto;
   padding: 80px;
 }
-/* line 110, ../scss/_main.scss */
+/* line 113, ../scss/_main.scss */
 .videobutton span {
   display: block;
   padding: 10px;
 }
-/* line 114, ../scss/_main.scss */
+/* line 117, ../scss/_main.scss */
 .videobutton .glyphicon {
   font-size: 5em;
 }
 
-/* line 118, ../scss/_main.scss */
+/* line 121, ../scss/_main.scss */
 a.button {
   color: white;
 }
@@ -156,7 +161,7 @@ a.button {
 /* ========================================================================= */
 /* NAVIGATION
 /* ========================================================================= */
-/* line 124, ../scss/_main.scss */
+/* line 127, ../scss/_main.scss */
 header {
   position: fixed;
   background: white;
@@ -169,34 +174,34 @@ header {
   z-index: 9000;
   border-bottom: 1px solid #eeeeee;
 }
-/* line 135, ../scss/_main.scss */
+/* line 138, ../scss/_main.scss */
 header .header-container {
   margin: 0 auto;
   max-width: 1600px;
 }
-/* line 140, ../scss/_main.scss */
+/* line 143, ../scss/_main.scss */
 header .logo,
 header .social {
   height: 80px;
   width: 25%;
 }
-/* line 144, ../scss/_main.scss */
+/* line 147, ../scss/_main.scss */
 header .logo {
   float: left;
   padding: 15px;
   opacity: 0.7;
   transition: all 400ms ease-in-out;
 }
-/* line 149, ../scss/_main.scss */
+/* line 152, ../scss/_main.scss */
 header .logo:hover {
   opacity: 1;
 }
-/* line 153, ../scss/_main.scss */
+/* line 156, ../scss/_main.scss */
 header .social {
   padding: 20px;
   float: right;
 }
-/* line 157, ../scss/_main.scss */
+/* line 160, ../scss/_main.scss */
 header .mobile-link {
   width: 40%;
   padding: 24px;
@@ -205,19 +210,19 @@ header .mobile-link {
   opacity: 0.7;
   cursor: pointer;
 }
-/* line 165, ../scss/_main.scss */
+/* line 168, ../scss/_main.scss */
 header .header-navigation {
   margin: 0 auto;
   padding: 20px;
   width: 50%;
 }
-/* line 171, ../scss/_main.scss */
+/* line 174, ../scss/_main.scss */
 header .header-navigation nav ul li {
   display: inline-block;
   padding: 5px 10px;
 }
 
-/* line 179, ../scss/_main.scss */
+/* line 182, ../scss/_main.scss */
 nav ul li a {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
@@ -225,7 +230,7 @@ nav ul li a {
   font-size: 1.1em;
 }
 
-/* line 185, ../scss/_main.scss */
+/* line 188, ../scss/_main.scss */
 .mobile-menu {
   display: none;
   background: white;
@@ -236,7 +241,7 @@ nav ul li a {
   right: 0;
   z-index: 9000;
 }
-/* line 195, ../scss/_main.scss */
+/* line 198, ../scss/_main.scss */
 .mobile-menu ul li {
   text-align: center;
   padding: 15px;
@@ -244,7 +249,7 @@ nav ul li a {
   font-size: 1em;
 }
 
-/* line 205, ../scss/_main.scss */
+/* line 208, ../scss/_main.scss */
 .social a,
 .mobile-social a {
   display: inline-block;
@@ -255,28 +260,28 @@ nav ul li a {
   opacity: 0.7;
   transition: all 400ms ease-in-out;
 }
-/* line 213, ../scss/_main.scss */
+/* line 216, ../scss/_main.scss */
 .social a:hover,
 .mobile-social a:hover {
   opacity: 1;
 }
-/* line 216, ../scss/_main.scss */
+/* line 219, ../scss/_main.scss */
 .social a.header-instagram,
 .mobile-social a.header-instagram {
   background: url(../img/instagram-small.png);
 }
-/* line 219, ../scss/_main.scss */
+/* line 222, ../scss/_main.scss */
 .social a.header-facebook,
 .mobile-social a.header-facebook {
   background: url(../img/facebook-small.png);
 }
-/* line 222, ../scss/_main.scss */
+/* line 225, ../scss/_main.scss */
 .social a.header-pinterest,
 .mobile-social a.header-pinterest {
   background: url(../img/pinterest-small.png);
 }
 
-/* line 227, ../scss/_main.scss */
+/* line 230, ../scss/_main.scss */
 .mobile-social {
   display: none;
   margin: 0 auto;
@@ -285,7 +290,7 @@ nav ul li a {
 /* ========================================================================= */
 /* LANDINGPAGE
 /* ========================================================================= */
-/* line 234, ../scss/_main.scss */
+/* line 237, ../scss/_main.scss */
 .landing {
   background-color: #f0f1f2;
   background-image: url(../img/background.jpg);
@@ -296,11 +301,11 @@ nav ul li a {
   display: table;
   height: 100%;
 }
-/* line 243, ../scss/_main.scss */
+/* line 246, ../scss/_main.scss */
 .landing h1 {
   padding-top: 20px;
 }
-/* line 246, ../scss/_main.scss */
+/* line 249, ../scss/_main.scss */
 .landing h2 {
   font-size: 2em;
   text-transform: none;
@@ -309,16 +314,16 @@ nav ul li a {
 /* ========================================================================= */
 /* VINST
 /* ========================================================================= */
-/* line 254, ../scss/_main.scss */
+/* line 257, ../scss/_main.scss */
 .vinst {
   background-color: #f8f8f8;
   min-height: 700px;
 }
-/* line 257, ../scss/_main.scss */
+/* line 260, ../scss/_main.scss */
 .vinst .container {
   margin: 50px auto;
 }
-/* line 259, ../scss/_main.scss */
+/* line 262, ../scss/_main.scss */
 .vinst .container .grid-object {
   cursor: pointer;
   position: relative;
@@ -326,7 +331,7 @@ nav ul li a {
   height: 220px;
   overflow: hidden;
 }
-/* line 265, ../scss/_main.scss */
+/* line 268, ../scss/_main.scss */
 .vinst .container .grid-object img {
   border: 15px solid #f0f1f2;
   position: absolute;
@@ -339,7 +344,7 @@ nav ul li a {
   width: 220px;
   height: 220px;
 }
-/* line 278, ../scss/_main.scss */
+/* line 281, ../scss/_main.scss */
 .vinst .container .overlay {
   opacity: 0;
   transition: all 400ms ease-in-out;
@@ -356,185 +361,57 @@ nav ul li a {
   border: 15px solid transparent;
   background: rgba(255, 255, 255, 0.4);
 }
-/* line 293, ../scss/_main.scss */
+/* line 296, ../scss/_main.scss */
 .vinst .container .overlay:hover {
   opacity: 1;
 }
-/* line 295, ../scss/_main.scss */
+/* line 298, ../scss/_main.scss */
 .vinst .container .overlay:hover .button {
   -webkit-transform: scale(1);
 }
-/* line 299, ../scss/_main.scss */
+/* line 302, ../scss/_main.scss */
 .vinst .container .overlay span {
   padding: 5px 0px;
   margin: 0;
 }
-/* line 303, ../scss/_main.scss */
+/* line 306, ../scss/_main.scss */
 .vinst .container .overlay .button {
   transition: all 400ms ease-in-out;
   -webkit-transform: scale(0.9);
 }
-/* line 309, ../scss/_main.scss */
+/* line 312, ../scss/_main.scss */
 .vinst .button {
   margin-top: 20px;
 }
-/* line 313, ../scss/_main.scss */
+/* line 316, ../scss/_main.scss */
 .vinst p img {
   margin: 30px 0;
 }
 
 /* ========================================================================= */
-/* INSPIRATION
-/* ========================================================================= */
-/* line 321, ../scss/_main.scss */
-.inspiration {
-  background-color: #f8f8f8;
-  min-height: 700px;
-}
-/* line 324, ../scss/_main.scss */
-.inspiration .social-links {
-  position: relative;
-  margin: 0 auto;
-}
-/* line 327, ../scss/_main.scss */
-.inspiration .social-links a {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  width: 64px;
-  height: 64px;
-  background-position: left top;
-  background-repeat: no-repeat;
-  margin: 40px 20px;
-  color: transparent;
-  transition: all 400ms ease-in-out;
-  opacity: 0.6;
-}
-/* line 339, ../scss/_main.scss */
-.inspiration .social-links a.instagram {
-  background-image: url(../img/instagram.png);
-}
-/* line 342, ../scss/_main.scss */
-.inspiration .social-links a.facebook {
-  background-image: url(../img/facebook.png);
-}
-/* line 345, ../scss/_main.scss */
-.inspiration .social-links a.pinterest {
-  background-image: url(../img/pinterest.png);
-}
-/* line 348, ../scss/_main.scss */
-.inspiration .social-links a:hover {
-  opacity: 1;
-}
-/* line 351, ../scss/_main.scss */
-.inspiration .social-links a span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 64px;
-  height: 64px;
-}
-/* line 360, ../scss/_main.scss */
-.inspiration .carousel {
-  margin: 80px auto;
-  width: 100%;
-  overflow: hidden;
-}
-/* line 364, ../scss/_main.scss */
-.inspiration .carousel .container-fluid {
-  padding: 0;
-}
-/* line 368, ../scss/_main.scss */
-.inspiration .carousel .carousel-inner img {
-  margin: 0 auto;
-  max-height: 600px;
-}
-/* line 373, ../scss/_main.scss */
-.inspiration .carousel .carousel-indicators {
-  bottom: 0;
-}
-/* line 375, ../scss/_main.scss */
-.inspiration .carousel .carousel-indicators li {
-  width: 12px;
-  height: 12px;
-  border: 0;
-  margin: 5px;
-  background: rgba(255, 255, 255, 0.5);
-  vertical-align: middle;
-  transition: all 300ms ease-in-out;
-}
-/* line 384, ../scss/_main.scss */
-.inspiration .carousel .carousel-indicators li.active, .inspiration .carousel .carousel-indicators li:hover {
-  background: white;
-}
-/* line 389, ../scss/_main.scss */
-.inspiration .carousel .carousel-control {
-  width: 80px;
-  height: 80px;
-  top: 50%;
-  margin-top: -40px;
-  background-image: none;
-}
-/* line 396, ../scss/_main.scss */
-.inspiration .carousel .carousel-control.left span, .inspiration .carousel .carousel-control.right span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 80px;
-  height: 80px;
-  background-repeat: no-repeat;
-}
-/* line 406, ../scss/_main.scss */
-.inspiration .carousel .carousel-control.left {
-  left: 55px;
-}
-/* line 407, ../scss/_main.scss */
-.inspiration .carousel .carousel-control.left span {
-  background-image: url(../img/arrow-left.png);
-}
-/* line 412, ../scss/_main.scss */
-.inspiration .carousel .carousel-control.right {
-  right: 55px;
-}
-/* line 413, ../scss/_main.scss */
-.inspiration .carousel .carousel-control.right span {
-  background-image: url(../img/arrow-right.png);
-}
-/* line 422, ../scss/_main.scss */
-.inspiration .carousel .carousel-control .glyphicon-chevron-left,
-.inspiration .carousel .carousel-control .glyphicon-chevron-right,
-.inspiration .carousel .carousel-control .icon-prev,
-.inspiration .carousel .carousel-control .icon-next {
-  font-size: 80px;
-  color: black;
-}
-
-/* ========================================================================= */
 /* REGLER
 /* ========================================================================= */
-/* line 431, ../scss/_main.scss */
+/* line 324, ../scss/_main.scss */
 .regler {
   background: transparent url(../img/pattern.jpg);
   background-repeat: repeat;
   padding: 0;
 }
-/* line 436, ../scss/_main.scss */
+/* line 329, ../scss/_main.scss */
 .regler .rules h3 {
   font-size: 3em;
 }
-/* line 439, ../scss/_main.scss */
+/* line 332, ../scss/_main.scss */
 .regler .rules p {
   font-size: 1.4em;
   padding: 10px;
 }
-/* line 444, ../scss/_main.scss */
+/* line 337, ../scss/_main.scss */
 .regler p {
   padding: 60px 100px;
 }
 
-/* line 448, ../scss/_main.scss */
+/* line 341, ../scss/_main.scss */
 .reglerbg {
   background-color: rgba(255, 255, 255, 0.8);
   margin: 60px;
@@ -544,31 +421,31 @@ nav ul li a {
 /* ========================================================================= */
 /* INSTAGRAM-BIDRAG
 /* ========================================================================= */
-/* line 456, ../scss/_main.scss */
+/* line 349, ../scss/_main.scss */
 .instagram {
   background-color: #f0f1f2;
 }
-/* line 458, ../scss/_main.scss */
+/* line 351, ../scss/_main.scss */
 .instagram .container {
   max-width: 1200px;
   margin-top: 40px;
 }
-/* line 462, ../scss/_main.scss */
+/* line 355, ../scss/_main.scss */
 .instagram .button {
   margin-top: 100px;
   margin-bottom: 0;
 }
-/* line 466, ../scss/_main.scss */
+/* line 359, ../scss/_main.scss */
 .instagram .grid-image {
   margin-top: 20px;
   position: relative;
 }
-/* line 470, ../scss/_main.scss */
+/* line 363, ../scss/_main.scss */
 .instagram .grid-image h4,
 .instagram .grid-image .fb-like {
   width: 200px;
 }
-/* line 474, ../scss/_main.scss */
+/* line 367, ../scss/_main.scss */
 .instagram .grid-image a img {
   width: 200px;
   height: 200px;
@@ -576,7 +453,7 @@ nav ul li a {
   margin: 0;
 }
 
-/* line 486, ../scss/_main.scss */
+/* line 379, ../scss/_main.scss */
 .grid-image h4,
 .grid-image .fb-like,
 #loadedImage h4,
@@ -587,24 +464,24 @@ nav ul li a {
   overflow: hidden;
   font-size: 1.2em;
 }
-/* line 493, ../scss/_main.scss */
+/* line 386, ../scss/_main.scss */
 .grid-image h4,
 #loadedImage h4 {
   padding: 20px 0 10px 0;
 }
-/* line 496, ../scss/_main.scss */
+/* line 389, ../scss/_main.scss */
 .grid-image a,
 #loadedImage a {
   display: block;
 }
-/* line 499, ../scss/_main.scss */
+/* line 392, ../scss/_main.scss */
 .grid-image .fb-like,
 #loadedImage .fb-like {
   display: block;
   padding: 10px 0 20px 0;
 }
 
-/* line 504, ../scss/_main.scss */
+/* line 397, ../scss/_main.scss */
 #loadedImage {
   display: none;
   background: #f8f8f8;
@@ -615,19 +492,19 @@ nav ul li a {
   z-index: 202021;
   margin-left: -193px;
 }
-/* line 514, ../scss/_main.scss */
+/* line 407, ../scss/_main.scss */
 #loadedImage h4,
 #loadedImage .fb-like {
   width: 306px;
 }
-/* line 518, ../scss/_main.scss */
+/* line 411, ../scss/_main.scss */
 #loadedImage a img {
   width: 306px;
   height: 306px;
   border: 0;
   margin: 0;
 }
-/* line 525, ../scss/_main.scss */
+/* line 418, ../scss/_main.scss */
 #loadedImage #loadedImageClose {
   cursor: pointer;
   position: absolute;
@@ -638,7 +515,7 @@ nav ul li a {
   background: white;
   overflow: hidden;
 }
-/* line 534, ../scss/_main.scss */
+/* line 427, ../scss/_main.scss */
 #loadedImage #loadedImageClose p {
   font-size: 2em;
   line-height: 1em;
@@ -651,7 +528,7 @@ nav ul li a {
   bottom: 0;
 }
 
-/* line 547, ../scss/_main.scss */
+/* line 440, ../scss/_main.scss */
 #loadedOverlay {
   position: fixed;
   left: 0;
@@ -665,36 +542,164 @@ nav ul li a {
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* line 559, ../scss/_main.scss */
+/* line 452, ../scss/_main.scss */
 .openInstagramModal {
   cursor: pointer;
 }
 
-/* line 563, ../scss/_main.scss */
+/* line 456, ../scss/_main.scss */
 #load-more .button {
   margin-top: 100px;
 }
 
 /* ========================================================================= */
+/* INSPIRATION
+/* ========================================================================= */
+/* line 463, ../scss/_main.scss */
+.inspiration {
+  background-color: #f8f8f8;
+  min-height: 700px;
+}
+/* line 466, ../scss/_main.scss */
+.inspiration .social-links {
+  position: relative;
+  margin: 0 auto;
+}
+/* line 469, ../scss/_main.scss */
+.inspiration .social-links a {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  margin: 40px 20px;
+  color: transparent;
+  transition: all 400ms ease-in-out;
+  opacity: 0.6;
+}
+/* line 481, ../scss/_main.scss */
+.inspiration .social-links a.instagram {
+  background-image: url(../img/instagram.png);
+}
+/* line 484, ../scss/_main.scss */
+.inspiration .social-links a.facebook {
+  background-image: url(../img/facebook.png);
+}
+/* line 487, ../scss/_main.scss */
+.inspiration .social-links a.pinterest {
+  background-image: url(../img/pinterest.png);
+}
+/* line 490, ../scss/_main.scss */
+.inspiration .social-links a:hover {
+  opacity: 1;
+}
+/* line 493, ../scss/_main.scss */
+.inspiration .social-links a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 64px;
+}
+/* line 502, ../scss/_main.scss */
+.inspiration .carousel {
+  margin: 80px auto;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 506, ../scss/_main.scss */
+.inspiration .carousel .container-fluid {
+  padding: 0;
+}
+/* line 510, ../scss/_main.scss */
+.inspiration .carousel .carousel-inner img {
+  margin: 0 auto;
+  max-height: 600px;
+}
+/* line 515, ../scss/_main.scss */
+.inspiration .carousel .carousel-indicators {
+  bottom: 0;
+}
+/* line 517, ../scss/_main.scss */
+.inspiration .carousel .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border: 0;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  vertical-align: middle;
+  transition: all 300ms ease-in-out;
+}
+/* line 526, ../scss/_main.scss */
+.inspiration .carousel .carousel-indicators li.active, .inspiration .carousel .carousel-indicators li:hover {
+  background: white;
+}
+/* line 531, ../scss/_main.scss */
+.inspiration .carousel .carousel-control {
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  margin-top: -40px;
+  background-image: none;
+}
+/* line 538, ../scss/_main.scss */
+.inspiration .carousel .carousel-control.left span, .inspiration .carousel .carousel-control.right span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+}
+/* line 548, ../scss/_main.scss */
+.inspiration .carousel .carousel-control.left {
+  left: 55px;
+}
+/* line 549, ../scss/_main.scss */
+.inspiration .carousel .carousel-control.left span {
+  background-image: url(../img/arrow-left.png);
+}
+/* line 554, ../scss/_main.scss */
+.inspiration .carousel .carousel-control.right {
+  right: 55px;
+}
+/* line 555, ../scss/_main.scss */
+.inspiration .carousel .carousel-control.right span {
+  background-image: url(../img/arrow-right.png);
+}
+/* line 564, ../scss/_main.scss */
+.inspiration .carousel .carousel-control .glyphicon-chevron-left,
+.inspiration .carousel .carousel-control .glyphicon-chevron-right,
+.inspiration .carousel .carousel-control .icon-prev,
+.inspiration .carousel .carousel-control .icon-next {
+  font-size: 80px;
+  color: black;
+}
+
+/* ========================================================================= */
 /* FOOTER
 /* ========================================================================= */
-/* line 570, ../scss/_main.scss */
+/* line 573, ../scss/_main.scss */
 .footer {
   background-image: url(../img/footerpattern.jpg);
   background-repeat: repeat;
   padding: 10px 0 60px 0;
 }
-/* line 575, ../scss/_main.scss */
+/* line 578, ../scss/_main.scss */
 .footer h4,
 .footer p {
   padding: 30px 0;
 }
-/* line 578, ../scss/_main.scss */
+/* line 581, ../scss/_main.scss */
 .footer .footertext {
   font-size: 30px;
   font-family: 'Playfair Display', serif;
 }
-/* line 582, ../scss/_main.scss */
+/* line 585, ../scss/_main.scss */
 .footer .logo {
   margin-top: 60px;
 }
@@ -702,22 +707,22 @@ nav ul li a {
 /* ========================================================================= */
 /* MODAL
 /* ========================================================================= */
-/* line 589, ../scss/_main.scss */
+/* line 592, ../scss/_main.scss */
 .modal {
   z-index: 99999;
 }
-/* line 591, ../scss/_main.scss */
+/* line 594, ../scss/_main.scss */
 .modal .modal-dialog {
   width: 900px;
 }
-/* line 593, ../scss/_main.scss */
+/* line 596, ../scss/_main.scss */
 .modal .modal-dialog .modal-content {
   background: #f8f8f8;
   border: 0;
   border-radius: 0;
   box-shadow: none;
 }
-/* line 598, ../scss/_main.scss */
+/* line 601, ../scss/_main.scss */
 .modal .modal-dialog .modal-content .close {
   cursor: pointer;
   position: absolute;
@@ -737,51 +742,51 @@ nav ul li a {
   opacity: 1;
   z-index: 99990909;
 }
-/* line 617, ../scss/_main.scss */
+/* line 620, ../scss/_main.scss */
 .modal .modal-dialog .modal-content .modal-header {
   border: 0;
 }
-/* line 619, ../scss/_main.scss */
+/* line 622, ../scss/_main.scss */
 .modal .modal-dialog .modal-content .modal-header h3 {
   margin: 0;
 }
-/* line 625, ../scss/_main.scss */
+/* line 628, ../scss/_main.scss */
 .modal .modal-dialog .modal-content .modal-body .big-image,
 .modal .modal-dialog .modal-content .modal-body .thumbnails {
   float: right;
 }
-/* line 628, ../scss/_main.scss */
+/* line 631, ../scss/_main.scss */
 .modal .modal-dialog .modal-content .modal-body .big-image {
   width: 85%;
   height: 460px;
   margin-top: 0px;
   overflow: hidden;
 }
-/* line 634, ../scss/_main.scss */
+/* line 637, ../scss/_main.scss */
 .modal .modal-dialog .modal-content .modal-body .big-image img {
   width: 100%;
 }
-/* line 638, ../scss/_main.scss */
+/* line 641, ../scss/_main.scss */
 .modal .modal-dialog .modal-content .modal-body .thumbnails {
   width: 15%;
   margin: 0 auto;
 }
-/* line 641, ../scss/_main.scss */
+/* line 644, ../scss/_main.scss */
 .modal .modal-dialog .modal-content .modal-body .thumbnails img {
   width: 100px;
   height: 100px;
   margin: 0px 10px 20px 0px;
 }
-/* line 647, ../scss/_main.scss */
+/* line 650, ../scss/_main.scss */
 .modal .modal-dialog .modal-content .modal-body .modal-text {
   text-align: center;
 }
-/* line 649, ../scss/_main.scss */
+/* line 652, ../scss/_main.scss */
 .modal .modal-dialog .modal-content .modal-body .modal-text p {
   font-size: 16px;
 }
 
-/* line 657, ../scss/_main.scss */
+/* line 660, ../scss/_main.scss */
 .modal-backdrop {
   z-index: 99998;
   background: black;
@@ -790,17 +795,17 @@ nav ul li a {
 /* ========================================================================= */
 /* TOOLTIPS
 /* ========================================================================= */
-/* line 665, ../scss/_main.scss */
+/* line 668, ../scss/_main.scss */
 .tooltip > .tooltip-inner {
   font-size: 1.1em;
 }
 
-/* line 668, ../scss/_main.scss */
+/* line 671, ../scss/_main.scss */
 .tooltip.bottom .tooltip-arrow {
   border-bottom-color: rgba(162, 175, 189, 0.8);
 }
 
-/* line 671, ../scss/_main.scss */
+/* line 674, ../scss/_main.scss */
 .tooltip-inner {
   padding: 5px;
   background: rgba(162, 175, 189, 0.8);
@@ -809,7 +814,7 @@ nav ul li a {
 /* ========================================================================= */
 /* COMING SOON
 /* ========================================================================= */
-/* line 678, ../scss/_main.scss */
+/* line 681, ../scss/_main.scss */
 .coming-soon {
   background-image: url(../img/soon.jpg);
   width: 100%;
@@ -817,7 +822,7 @@ nav ul li a {
   height: 100%;
   position: relative;
 }
-/* line 684, ../scss/_main.scss */
+/* line 687, ../scss/_main.scss */
 .coming-soon .soon-inner {
   width: 600px;
   text-align: center;
@@ -826,7 +831,7 @@ nav ul li a {
   left: 50%;
   margin-left: -300px;
 }
-/* line 691, ../scss/_main.scss */
+/* line 694, ../scss/_main.scss */
 .coming-soon .soon-inner h1 {
   font-size: 5em;
   text-transform: uppercase;
@@ -842,68 +847,68 @@ nav ul li a {
   header .social {
     width: 30%;
   }
-  /* line 13, ../scss/_responsive.scss */
+  /* line 10, ../scss/_responsive.scss */
   header .header-navigation {
     display: none;
   }
 
-  /* line 17, ../scss/_responsive.scss */
+  /* line 14, ../scss/_responsive.scss */
   .landing {
     background-size: 1200px auto;
   }
 
-  /* line 20, ../scss/_responsive.scss */
+  /* line 17, ../scss/_responsive.scss */
   .section p {
     padding: 0px 150px;
   }
 
-  /* line 23, ../scss/_responsive.scss */
+  /* line 20, ../scss/_responsive.scss */
   .regler p {
     padding: 60px;
   }
 
-  /* line 26, ../scss/_responsive.scss */
+  /* line 23, ../scss/_responsive.scss */
   .inspiration .carousel .carousel-control.left {
     left: 40px;
   }
 
-  /* line 29, ../scss/_responsive.scss */
+  /* line 26, ../scss/_responsive.scss */
   .inspiration .carousel .carousel-control.right {
     right: 40px;
   }
 
-  /* line 33, ../scss/_responsive.scss */
+  /* line 30, ../scss/_responsive.scss */
   .modal .modal-dialog {
     width: 90%;
   }
-  /* line 38, ../scss/_responsive.scss */
+  /* line 35, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-header {
     border: 0;
   }
-  /* line 40, ../scss/_responsive.scss */
+  /* line 37, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-header h3 {
     margin: 0;
   }
-  /* line 46, ../scss/_responsive.scss */
+  /* line 43, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .big-image,
   .modal .modal-dialog .modal-content .modal-body .thumbnails {
     float: none;
     width: 100%;
   }
-  /* line 50, ../scss/_responsive.scss */
+  /* line 47, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .big-image {
     height: auto;
   }
-  /* line 53, ../scss/_responsive.scss */
+  /* line 50, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .thumbnails {
     width: 100%;
     margin: 0 auto;
   }
-  /* line 56, ../scss/_responsive.scss */
+  /* line 53, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .thumbnails a {
     display: inline-block;
   }
-  /* line 59, ../scss/_responsive.scss */
+  /* line 56, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .thumbnails img {
     margin: 20px 20px 20px 0px;
     width: 120px;
@@ -911,101 +916,101 @@ nav ul li a {
   }
 }
 @media screen and (max-width: 768px) and (min-width: 480px) {
-  /* line 73, ../scss/_responsive.scss */
+  /* line 70, ../scss/_responsive.scss */
   header .mobile-link {
     display: block;
     float: right;
     width: 25%;
   }
-  /* line 78, ../scss/_responsive.scss */
+  /* line 75, ../scss/_responsive.scss */
   header .social {
     display: none;
   }
-  /* line 81, ../scss/_responsive.scss */
+  /* line 78, ../scss/_responsive.scss */
   header .header-navigation {
     display: none;
   }
 
-  /* line 85, ../scss/_responsive.scss */
+  /* line 82, ../scss/_responsive.scss */
   .mobile-social {
     display: block;
   }
 
-  /* line 88, ../scss/_responsive.scss */
+  /* line 85, ../scss/_responsive.scss */
   h2 {
     font-size: 40px;
   }
 
-  /* line 91, ../scss/_responsive.scss */
+  /* line 88, ../scss/_responsive.scss */
   p {
     font-size: 20px;
   }
 
-  /* line 94, ../scss/_responsive.scss */
+  /* line 91, ../scss/_responsive.scss */
   .section p {
     padding: 0px 50px;
   }
 
-  /* line 97, ../scss/_responsive.scss */
+  /* line 94, ../scss/_responsive.scss */
   .landing {
     background-size: 1200px auto;
   }
 
-  /* line 100, ../scss/_responsive.scss */
+  /* line 97, ../scss/_responsive.scss */
   .videobutton {
     max-width: 400px;
   }
 
-  /* line 103, ../scss/_responsive.scss */
+  /* line 100, ../scss/_responsive.scss */
   .reglerbg {
     margin: 20px;
     padding: 20px;
   }
 
-  /* line 107, ../scss/_responsive.scss */
+  /* line 104, ../scss/_responsive.scss */
   .regler p {
     padding: 60px;
   }
 
-  /* line 110, ../scss/_responsive.scss */
+  /* line 107, ../scss/_responsive.scss */
   .inspiration .carousel .carousel-control.left {
     left: 0px;
   }
 
-  /* line 113, ../scss/_responsive.scss */
+  /* line 110, ../scss/_responsive.scss */
   .inspiration .carousel .carousel-control.right {
     right: 0px;
   }
 
-  /* line 117, ../scss/_responsive.scss */
+  /* line 114, ../scss/_responsive.scss */
   .modal .modal-dialog {
     width: 100%;
     margin: 0;
   }
-  /* line 121, ../scss/_responsive.scss */
+  /* line 118, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-header {
     padding-right: 80px;
   }
-  /* line 126, ../scss/_responsive.scss */
+  /* line 123, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .big-image,
   .modal .modal-dialog .modal-content .modal-body .thumbnails {
     float: none;
     width: 100%;
   }
-  /* line 130, ../scss/_responsive.scss */
+  /* line 127, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .big-image {
     height: auto;
   }
-  /* line 133, ../scss/_responsive.scss */
+  /* line 130, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .thumbnails {
     width: 100%;
     margin: 0 auto;
   }
-  /* line 136, ../scss/_responsive.scss */
+  /* line 133, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .thumbnails a {
     display: inline-block;
   }
-  /* line 139, ../scss/_responsive.scss */
+  /* line 136, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .thumbnails img {
     margin: 20px 20px 20px 0px;
     width: 85px;
@@ -1013,106 +1018,106 @@ nav ul li a {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 153, ../scss/_responsive.scss */
+  /* line 150, ../scss/_responsive.scss */
   header .mobile-link {
     display: block;
     float: right;
     width: 25%;
   }
-  /* line 158, ../scss/_responsive.scss */
+  /* line 155, ../scss/_responsive.scss */
   header .social {
     display: none;
   }
-  /* line 161, ../scss/_responsive.scss */
+  /* line 158, ../scss/_responsive.scss */
   header .header-navigation {
     display: none;
   }
 
-  /* line 165, ../scss/_responsive.scss */
+  /* line 162, ../scss/_responsive.scss */
   .mobile-social {
     display: block;
   }
 
-  /* line 168, ../scss/_responsive.scss */
+  /* line 165, ../scss/_responsive.scss */
   h2 {
     font-size: 30px;
   }
 
-  /* line 171, ../scss/_responsive.scss */
+  /* line 168, ../scss/_responsive.scss */
   p {
     font-size: 20px;
   }
 
-  /* line 174, ../scss/_responsive.scss */
+  /* line 171, ../scss/_responsive.scss */
   .section p {
     padding: 0px 50px;
   }
 
-  /* line 177, ../scss/_responsive.scss */
+  /* line 174, ../scss/_responsive.scss */
   .landing {
     background-size: 1200px auto;
   }
 
-  /* line 180, ../scss/_responsive.scss */
+  /* line 177, ../scss/_responsive.scss */
   .videobutton {
     max-width: 300px;
   }
 
-  /* line 183, ../scss/_responsive.scss */
+  /* line 180, ../scss/_responsive.scss */
   .reglerbg {
     margin: 0px;
     padding: 20px;
   }
 
-  /* line 187, ../scss/_responsive.scss */
+  /* line 184, ../scss/_responsive.scss */
   .regler p {
     padding: 60px;
   }
 
-  /* line 190, ../scss/_responsive.scss */
+  /* line 187, ../scss/_responsive.scss */
   .inspiration .carousel .carousel-control.left {
     left: 0px;
   }
 
-  /* line 193, ../scss/_responsive.scss */
+  /* line 190, ../scss/_responsive.scss */
   .inspiration .carousel .carousel-control.right {
     right: 0px;
   }
 
-  /* line 197, ../scss/_responsive.scss */
+  /* line 194, ../scss/_responsive.scss */
   .modal .modal-dialog {
     width: 100%;
     margin: 0;
   }
-  /* line 201, ../scss/_responsive.scss */
+  /* line 198, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .close {
     top: 0;
     right: 0;
   }
-  /* line 205, ../scss/_responsive.scss */
+  /* line 202, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-header {
     padding-right: 80px;
   }
-  /* line 210, ../scss/_responsive.scss */
+  /* line 207, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .big-image,
   .modal .modal-dialog .modal-content .modal-body .thumbnails {
     float: none;
     width: 100%;
   }
-  /* line 214, ../scss/_responsive.scss */
+  /* line 211, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .big-image {
     height: auto;
   }
-  /* line 217, ../scss/_responsive.scss */
+  /* line 214, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .thumbnails {
     width: 100%;
     margin: 0 auto;
   }
-  /* line 220, ../scss/_responsive.scss */
+  /* line 217, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .thumbnails a {
     display: inline-block;
   }
-  /* line 223, ../scss/_responsive.scss */
+  /* line 220, ../scss/_responsive.scss */
   .modal .modal-dialog .modal-content .modal-body .thumbnails img {
     margin: 20px 20px 20px 0px;
     width: 60px;

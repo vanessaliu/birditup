@@ -1,7 +1,15 @@
+/**
+ * [birdItUp description]
+ * @type {Object}
+ */
 var birdItUp = {
 
     template: '<div class="grid-image col-xs-12 col-sm-4 col-md-3"><a class="openInstagramModal" data-id="{{id}}"><img src="{{image}}" /></a><h4><a href="http://instagram.com/{{model.user.username}}">@{{model.user.username}}</a></h4><a class="fb-like" data-href="?vote={{id}}" data-width="200px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></a></div>',
 
+    /**
+     * [init description]
+     * @return {[type]}
+     */
     init: function() {
         // Initialize page functions
         birdItUp.mobileMenu();
@@ -16,6 +24,10 @@ var birdItUp = {
         $('[data-toggle="tooltip"]').tooltip({'placement': 'auto'});
     },
 
+    /**
+     * [instaFeedBase description]
+     * @return {[type]}
+     */
     instaFeedBase: function() {
         var seeMore = $('#see-more');
         var feed = new Instafeed({
@@ -29,7 +41,6 @@ var birdItUp = {
             template: this.template,
             after: function() {
                 birdItUp.bindLinkToModal();
-                console.log('thishasnext', this.hasNext());
                 FB.XFBML.parse();
                 if (!this.hasNext()) {
                     seeMore.addClass('hidden');
@@ -39,8 +50,11 @@ var birdItUp = {
         feed.run();
     },
 
+    /**
+     * [instaFeedFull description]
+     * @return {[type]}
+     */
     instaFeedFull: function() {
-        // return;
         var loadButton = $('#load-more');
         var largeFeed = new Instafeed({
             get: 'tagged',
@@ -53,7 +67,6 @@ var birdItUp = {
             template: this.template,
             after: function() {
                 birdItUp.bindLinkToModal();
-                // disable button if no more results to load
                 if (!this.hasNext()) {
                     loadButton.addClass('disabled');
                 }
@@ -66,6 +79,10 @@ var birdItUp = {
         largeFeed.run();
     },
 
+    /**
+     * [bindLinkToModal description]
+     * @return {[type]}
+     */
     bindLinkToModal: function() {
         $('.openInstagramModal').on('click', function(event) {
             event.preventDefault();
@@ -75,13 +92,16 @@ var birdItUp = {
         });
     },
 
-
+    /**
+     * [loadVotedImage description]
+     * @param  {[type]} mediaId
+     * @return {[type]}
+     */
     loadVotedImage: function(mediaId) {
         var scope = this;
         if (typeof mediaId === 'undefined') {
             mediaId = window.location.search.substring(6);
         };
-        console.log(mediaId.length);
         var clientId = '9cd60ab846f743fcbc7a95d4c058dcc4';
         var url = 'https://api.instagram.com/v1/media/' + mediaId + '?client_id=' + clientId;
         if (mediaId.length > 0) {
@@ -93,7 +113,6 @@ var birdItUp = {
                 contentType: "application/json",
                 dataType: 'jsonp',
                 success: function(data) {
-                    console.log('data', data);
                     var newTemplate = scope.template;
                     newTemplate = newTemplate.replace('{{image}}', data.data.images.low_resolution.url);
                     newTemplate = newTemplate.replace('{{link}}', data.data.link);
@@ -126,6 +145,10 @@ var birdItUp = {
 
     },
 
+    /**
+     * [mobileMenu description]
+     * @return {[type]}
+     */
     mobileMenu: function() {
         $('.mobile-link').on('click', function() {
             $('.mobile-menu').slideToggle();
@@ -142,6 +165,12 @@ var birdItUp = {
         });
     },
 
+    /**
+     * [swapModalImage description]
+     * @param  {[type]} image
+     * @param  {[type]} id
+     * @return {[type]}
+     */
     swapModalImage: function(image, id) {
         $('.thumbnails a').on('click', function(event) {
             event.preventDefault();

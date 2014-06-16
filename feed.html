@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bird it up!</title>
-    <meta charset="utf8"/>
+    <title>bird it up! inredningstävling</title>
+    <meta charset="utf8" />
     <!-- SEARCH OPTIMIZATION -->
-<!-- TODO: DESCRIPTION -->
-    <meta name="description" content="Bird It Up! Bird it up är en inspirationssida med fågeltapeter för dig som gillar inredning. Vi anordnar tävlingar där du kan vinna snygga tapeter, självklart finns det många tapeter med fåglar att välja på."/>
-<!-- TODO: KEYWORDS -->
-    <meta name="keywords" content="Bird It Up, birditup.se, Photowall, tävling, tävla, tapet, fåglar, birds, tapetsera, Medieinstitut, Instagram"/>
+    <meta name="description" content="Bird It Up! Bird it up är en inspirationssida med fågeltapeter för dig som gillar inredning. Vi anordnar tävlingar där du kan vinna snygga tapeter, självklart finns det många tapeter med fåglar att välja på." />
+    <meta name="keywords" content="Bird It Up, birditup.se, Photowall, tävling, tävla, tapet, fåglar, birds, tapetsera, Medieinstitut, Instagram, inredning, Scandinavian Surface, presentkort, creativity, kreativitet, vinst, vinna" />
     <!-- FACEBOOK OG -->
-<!-- TODO: FIX LINK TO ICON   -->
-    <meta property="og:image" content="http://birditup.se/img/birditup.png"/>
-    <meta property="og:title" content="Bird It Up! Tävling"/>
-    <meta property="og:description" content="Tävla nu för en chans att vinna ett presentkort värde 2000 kronor till Photowall!"/>
-    <meta property="og:url" content="http://birditup.se"/>
-    <meta property="og:site_name" content="Bird It Up!"/>
+    <meta property="og:url" content="http://birditup.se" />
+    <meta property="og:image" content="http://birditup.se/img/birditup.png" />
+    <meta property="og:title" content="Bird It Up! Tävling" />
+    <meta property="og:description" content="Tävla nu för en chans att vinna ett presentkort värde 2000 kronor hos Photowall!" />
+    <meta property="og:site_name" content="Bird It Up!" />
     <!-- VIEWPORT -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- ICON -->
-<!-- TODO: FIX FAVICON -->
-    <link rel="icon" type="image/ico" href="http://birditup.se/img/logo.png"/>
+    <link rel="icon" type="image/ico" href="http://birditup.se/img/logo.png" />
     <!-- STYLESHEETS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- FONTS -->
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
     <!-- SCRIPTS -->
     <script type="text/javascript" src="js/vendor/instafeed.min.js"></script>
+    <script type="text/javascript" src="//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0"></script>
 </head>
 
 <body>
@@ -61,8 +58,8 @@
                         <ul>
                             <li><a href="index.html#">Hem</a></li>
                             <li><a href="index.html#vinst">Vinst</a></li>
-                            <li><a href="index.html#regler">Tävlingsregler</a></li>
-                            <li><a href="index.html#instagram">Rösta</a></li>
+                            <li><a href="index.html#regler">Tävlingen</a></li>
+                            <li><a href="index.html#instagram">Rösta här</a></li>
                             <li><a href="index.html#inspiration">Inspiration</a></li>
                         </ul>
                     </nav>
@@ -73,8 +70,8 @@
             <ul>
                 <li><a href="index.html#">Hem</a></li>
                 <li><a href="index.html#vinst">Vinst</a></li>
-                <li><a href="index.html#regler">Tävlingsregler</a></li>
-                <li><a href="index.html#instagram">Rösta</a></li>
+                <li><a href="index.html#regler">Tävlingen</a></li>
+                <li><a href="index.html#instagram">Rösta här</a></li>
                 <li><a href="index.html#inspiration">Inspiration</a></li>
                 <li class="mobile-social">
                     <a href="http://instagram.com/birditup" class="header-instagram"></a>
@@ -90,7 +87,7 @@
             <h2>Tävlingsbidrag</h2>
             <div class="section-line"></div>
             <p>Rösta på din favorit här! 1 Like = 1 röst. Du kan rösta på flera bilder, dock endast en gång på varje bidrag. Gillamarkeringar på Instagram räknas inte med i röstningsresultatet.</p>
-            <p style="color: red;">Behöver säga att röstning händer via Facebook-like, så man vett att man inte kan ha FB blockerat på sidan. (Annars kommer man inte se röstningsknappen och vet inte varför)</p>
+            <p class="smallertext">Ser du inte like-knappen under bilder, kontrollera att du har inte blockerat Facebook då röstning sker via Facebook likes!</p>
             <div class="container">
                 <div id="feed-full"></div>
                 <div id="load-more">
@@ -104,13 +101,14 @@
         <!-- Footer -->
         <footer class="section container-fluid footer">
             <a href="#"><img class="logo" src="img/logo.png" alt="Bird It Up!"/></a>
-            <p class="footertext">Bird It Up! är ett projekt av studenter på <a href="http://medieinstitutet.se/">Medieinstitutet</a>, I samarbete med <a href="http://www.photowall.com/">Photowall</a>.</p>
+            <p class="footertext">bird it up! är ett projekt av studenter på <a href="http://medieinstitutet.se/">Medieinstitutet</a>, i samarbete med <a href="http://www.photowall.com/">Photowall</a>.</p>
             <!-- <p><a href="http://birditup.se"><img src="" alt="Bird It Up!"/></a></p> -->
             <a href="http://medieinstitutet.se"><img src="img/medieinstitutet.png" alt="Medieinstitutet"/></a>
             <a href="http://www.photowall.com/"><img src="img/photowall.png" alt="Photowall"/></a>
             <h4>Copyright 2014</h4>
         </footer>
         <!-- End footer -->
+
     </div>
     <!-- End wrapper -->
 

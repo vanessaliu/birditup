@@ -76,6 +76,9 @@ a {
 .text-focus {
     font-weight: 700;
 }
+.smallertext {
+    font-size: 20px;
+}
 /* ========================================================================= */
 /* BUTTONS
 /* ========================================================================= */
@@ -316,116 +319,6 @@ nav ul li a {
     }
 }
 /* ========================================================================= */
-/* INSPIRATION
-/* ========================================================================= */
-.inspiration {
-    background-color: $lightgrey;
-    min-height: 700px;
-    .social-links {
-        position: relative;
-        margin: 0 auto;
-        a {
-            display: inline-block;
-            vertical-align: top;
-            position: relative;
-            width: 64px;
-            height: 64px;
-            background-position: left top;
-            background-repeat: no-repeat;
-            margin: 40px 20px;
-            color: transparent;
-            transition: all 400ms ease-in-out;
-            opacity: 0.6;
-            &.instagram {
-                background-image: url(../img/instagram.png);
-            }
-            &.facebook {
-                background-image: url(../img/facebook.png);
-            }
-            &.pinterest {
-                background-image: url(../img/pinterest.png);
-            }
-            &:hover {
-                opacity: 1;
-            }
-            span {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 64px;
-                height: 64px;
-            }
-        }
-    }
-    .carousel {
-        margin: 80px auto;
-        width: 100%;
-        overflow: hidden;
-        .container-fluid {
-            padding: 0;
-        }
-        .carousel-inner {
-            img {
-                margin: 0 auto;
-                max-height: 600px;
-            }
-        }
-        .carousel-indicators {
-            bottom: 0;
-            li {
-                width: 12px;
-                height: 12px;
-                border: 0;
-                margin: 5px;
-                background: $transparentwhite;
-                vertical-align: middle;
-                transition: all 300ms ease-in-out;
-                &.active,
-                &:hover {
-                    background: white;
-                }
-            }
-        }
-        .carousel-control {
-            width: 80px;
-            height: 80px;
-            top: 50%;
-            margin-top: -40px;
-            background-image: none;
-            &.left span,
-            &.right span {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    width: 80px;
-                    height: 80px;
-                    background-repeat: no-repeat;
-            }
-            &.left {
-                span {
-                    background-image: url(../img/arrow-left.png);
-                }
-                left: 55px;
-            }
-            &.right {
-                span {
-                    background-image: url(../img/arrow-right.png);
-                }
-                right: 55px;
-            }
-        }
-        .carousel-control .glyphicon-chevron-left,
-        .carousel-control .glyphicon-chevron-right,
-        .carousel-control .icon-prev,
-        .carousel-control .icon-next {
-            font-size: 80px;
-            color: black;
-        }
-    }
-}
-/* ========================================================================= */
 /* REGLER
 /* ========================================================================= */
 .regler {
@@ -562,6 +455,116 @@ nav ul li a {
 #load-more {
     .button {
         margin-top: 100px;
+    }
+}
+/* ========================================================================= */
+/* INSPIRATION
+/* ========================================================================= */
+.inspiration {
+    background-color: $lightgrey;
+    min-height: 700px;
+    .social-links {
+        position: relative;
+        margin: 0 auto;
+        a {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            width: 64px;
+            height: 64px;
+            background-position: left top;
+            background-repeat: no-repeat;
+            margin: 40px 20px;
+            color: transparent;
+            transition: all 400ms ease-in-out;
+            opacity: 0.6;
+            &.instagram {
+                background-image: url(../img/instagram.png);
+            }
+            &.facebook {
+                background-image: url(../img/facebook.png);
+            }
+            &.pinterest {
+                background-image: url(../img/pinterest.png);
+            }
+            &:hover {
+                opacity: 1;
+            }
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
+    .carousel {
+        margin: 80px auto;
+        width: 100%;
+        overflow: hidden;
+        .container-fluid {
+            padding: 0;
+        }
+        .carousel-inner {
+            img {
+                margin: 0 auto;
+                max-height: 600px;
+            }
+        }
+        .carousel-indicators {
+            bottom: 0;
+            li {
+                width: 12px;
+                height: 12px;
+                border: 0;
+                margin: 5px;
+                background: $transparentwhite;
+                vertical-align: middle;
+                transition: all 300ms ease-in-out;
+                &.active,
+                &:hover {
+                    background: white;
+                }
+            }
+        }
+        .carousel-control {
+            width: 80px;
+            height: 80px;
+            top: 50%;
+            margin-top: -40px;
+            background-image: none;
+            &.left span,
+            &.right span {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 80px;
+                    height: 80px;
+                    background-repeat: no-repeat;
+            }
+            &.left {
+                span {
+                    background-image: url(../img/arrow-left.png);
+                }
+                left: 55px;
+            }
+            &.right {
+                span {
+                    background-image: url(../img/arrow-right.png);
+                }
+                right: 55px;
+            }
+        }
+        .carousel-control .glyphicon-chevron-left,
+        .carousel-control .glyphicon-chevron-right,
+        .carousel-control .icon-prev,
+        .carousel-control .icon-next {
+            font-size: 80px;
+            color: black;
+        }
     }
 }
 /* ========================================================================= */
