@@ -14,14 +14,13 @@ var birdItUp = {
         // Initialize page functions
         birdItUp.mobileMenu();
         birdItUp.swapModalImage();
+        birdItUp.showVideoModal();
 
         // Initialize Instagram functions
         birdItUp.instaFeedBase();
         birdItUp.instaFeedFull();
         birdItUp.loadVotedImage();
         FB.XFBML.parse();
-
-        $('[data-toggle="tooltip"]').tooltip({'placement': 'auto'});
     },
 
     /**
@@ -143,6 +142,24 @@ var birdItUp = {
             window.history.replaceState({} , '', '?');
         })
 
+    },
+
+    showVideoModal: function() {
+        $('.videobutton').on('click', function(event) {
+            event.preventDefault();
+            $('#videoModal').show();
+            $('#videoOverlay').show();
+            $('#videoModal').addClass('visible');
+        });
+        $('body').on('click', function(event) {
+            var videoVisible = $('#videoModal').hasClass('visible');
+            var isNotVideo = ($(event.target).closest('#videoModal').length === 0);
+            var isNotVideoButton = ($(event.target).closest('.videobutton').length === 0);
+            if (videoVisible && isNotVideo && isNotVideoButton) {
+                $('#videoModal').hide();
+                $('#videoOverlay').hide();
+            }
+        });
     },
 
     /**

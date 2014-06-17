@@ -1,6 +1,3 @@
-#videoModal {
-    display: none;
-}
 /* ========================================================================= */
 /* ROOT
 /* ========================================================================= */
@@ -42,6 +39,8 @@ ul {
     display: none;
 }
 .disabled {
+    -webkit-opacity: 0.1;
+    -moz-opacity: 0.1;
     opacity: 0.1;
 }
 /* ========================================================================= */
@@ -67,6 +66,8 @@ p {
 }
 a {
     color: $linkcolor;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
     &:hover {
         text-decoration: none;
@@ -94,10 +95,14 @@ a {
     font-size: 1.2em;
     padding: 20px;
     margin: 40px 20px;
+    -webkit-box-shadow: 0;
+    -moz-box-shadow: 0;
     box-shadow: 0;
     border-radius: 0;
     border: 0;
     text-transform: uppercase;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
     transition: all 200ms ease;
 
     &:hover {
@@ -113,6 +118,7 @@ a {
     display: block;
     margin: 40px auto 40px auto;
     padding: 80px;
+    background-size: 100%;
     span {
         display: block;
         padding: 10px;
@@ -150,9 +156,15 @@ header {
     .logo {
         float: left;
         padding: 15px;
+        -webkit-opacity: 0.7;
+        -moz-opacity: 0.7;
         opacity: 0.7;
+        -webkit-transition: all 400ms ease-in-out;
+        -moz-transition: all 400ms ease-in-out;
         transition: all 400ms ease-in-out;
         &:hover {
+            -webkit-opacity: 1;
+            -moz-opacity: 1;
             opacity: 1;
         }
     }
@@ -165,6 +177,8 @@ header {
         padding: 24px;
         float: left;
         display: none;
+        -webkit-opacity: 0.7;
+        -moz-opacity: 0.7;
         opacity: 0.7;
         cursor: pointer;
     }
@@ -214,9 +228,15 @@ nav ul li a {
         width: 36px;
         height: 36px;
         background: red;
+        -webkit-opacity: 0.7;
+        -moz-opacity: 0.7;
         opacity: 0.7;
+        -webkit-transition: all 400ms ease-in-out;
+        -moz-transition: all 400ms ease-in-out;
         transition: all 400ms ease-in-out;
         &:hover {
+            -webkit-opacity: 1;
+            -moz-opacity: 1;
             opacity: 1;
         }
         &.header-instagram {
@@ -283,7 +303,11 @@ nav ul li a {
             }
         }
         .overlay {
+            -webkit-opacity: 0;
+            -moz-opacity: 0;
             opacity: 0;
+            -webkit-transition: all 400ms ease-in-out;
+            -moz-transition: all 400ms ease-in-out;
             transition: all 400ms ease-in-out;
             cursor: pointer;
             position: absolute;
@@ -298,9 +322,13 @@ nav ul li a {
             border: 15px solid transparent;
             background: $whiteoverlay;
             &:hover {
+                -webkit-opacity: 1;
+                -moz-opacity: 1;
                 opacity: 1;
                 .button {
                     -webkit-transform: scale(1);
+                    -moz-transform: scale(1);
+                    transform: scale(1);
                 }
             }
             span {
@@ -308,8 +336,12 @@ nav ul li a {
                 margin: 0;
             }
             .button {
+                -webkit-transition: all 400ms ease-in-out;
+                -moz-transition: all 400ms ease-in-out;
                 transition: all 400ms ease-in-out;
                 -webkit-transform: scale(0.9);
+                -moz-transform: scale(1);
+                transform: scale(1);
             }
         }
     }
@@ -384,10 +416,10 @@ nav ul li a {
         background-color: $white;
         margin: 0 auto;
         text-align: center;
-        overflow: hidden;
         font-size: 1.2em;
     }
     h4 {
+        overflow: hidden;
         padding: 20px 0 10px 0;
     }
     a {
@@ -441,6 +473,7 @@ nav ul li a {
         }
     }
 }
+#videoOverlay,
 #loadedOverlay {
     position: fixed;
     left: 0;
@@ -480,7 +513,11 @@ nav ul li a {
             background-repeat: no-repeat;
             margin: 40px 20px;
             color: transparent;
+            -webkit-transition: all 400ms ease-in-out;
+            -moz-transition: all 400ms ease-in-out;
             transition: all 400ms ease-in-out;
+            -webkit-opacity: 0.6;
+            -moz-opacity: 0.6;
             opacity: 0.6;
             &.instagram {
                 background-image: url(../img/instagram.png);
@@ -492,6 +529,8 @@ nav ul li a {
                 background-image: url(../img/pinterest.png);
             }
             &:hover {
+                -webkit-opacity: 1;
+                -moz-opacity: 1;
                 opacity: 1;
             }
             span {
@@ -525,6 +564,8 @@ nav ul li a {
                 margin: 5px;
                 background: $transparentwhite;
                 vertical-align: middle;
+                -webkit-transition: all 300ms ease-in-out;
+                -moz-transition: all 300ms ease-in-out;
                 transition: all 300ms ease-in-out;
                 &.active,
                 &:hover {
@@ -581,8 +622,6 @@ nav ul li a {
     h4,
     p {
         padding: 30px 0;
-    }
-    .footertext {
         font-size: 30px;
         font-family: 'Playfair Display', serif;
     }
@@ -601,6 +640,8 @@ nav ul li a {
             background: $lightgrey;
             border: 0;
             border-radius: 0;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
             box-shadow: none;
             .close {
                 cursor: pointer;
@@ -618,6 +659,8 @@ nav ul li a {
                 position: absolute;
                 color: $textcolor;
                 font-weight: 300;
+                -webkit-opacity: 1;
+                -moz-opacity: 1;
                 opacity: 1;
                 z-index: 99990909;
             }
@@ -666,9 +709,20 @@ nav ul li a {
     background: black;
 }
 /* ========================================================================= */
+/* VIDEOMODAL
+/* ========================================================================= */
+#videoModal {
+    display: none;
+    position: fixed;
+    top: 100px;
+    width: 560px;
+    left: 50%;
+    z-index: 202021;
+    margin-left: -280px;
+}
+/* ========================================================================= */
 /* TOOLTIPS
 /* ========================================================================= */
-
 .tooltip > .tooltip-inner {
     font-size: 1.1em;
 }
