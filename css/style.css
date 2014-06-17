@@ -1,5 +1,10 @@
 /*colors*/
 /*#626261*/
+/* line 1, ../scss/_main.scss */
+#videoModal {
+  display: none;
+}
+
 /* ========================================================================= */
 /* ROOT
 /* ========================================================================= */
@@ -393,22 +398,22 @@ nav ul li a {
 /* REGLER
 /* ========================================================================= */
 /* line 328, ../scss/_main.scss */
-.regler {
+.tavlingen {
   background: transparent url(../img/pattern.jpg);
   background-repeat: repeat;
   padding: 0;
 }
 /* line 333, ../scss/_main.scss */
-.regler .rules h3 {
+.tavlingen .rules h3 {
   font-size: 3em;
 }
 /* line 336, ../scss/_main.scss */
-.regler .rules p {
+.tavlingen .rules p {
   font-size: 1.4em;
   padding: 10px;
 }
 /* line 341, ../scss/_main.scss */
-.regler p {
+.tavlingen p {
   padding: 60px 100px;
 }
 
@@ -423,31 +428,31 @@ nav ul li a {
 /* INSTAGRAM-BIDRAG
 /* ========================================================================= */
 /* line 353, ../scss/_main.scss */
-.instagram {
+.rosta {
   background-color: #f0f1f2;
 }
 /* line 355, ../scss/_main.scss */
-.instagram .container {
+.rosta .container {
   max-width: 1200px;
   margin-top: 40px;
 }
 /* line 359, ../scss/_main.scss */
-.instagram .button {
+.rosta .button {
   margin-top: 100px;
   margin-bottom: 0;
 }
 /* line 363, ../scss/_main.scss */
-.instagram .grid-image {
+.rosta .grid-image {
   margin-top: 20px;
   position: relative;
 }
 /* line 367, ../scss/_main.scss */
-.instagram .grid-image h4,
-.instagram .grid-image .fb-like {
+.rosta .grid-image h4,
+.rosta .grid-image .fb-like {
   width: 200px;
 }
 /* line 371, ../scss/_main.scss */
-.instagram .grid-image a img {
+.rosta .grid-image a img {
   width: 200px;
   height: 200px;
   border: 0;
@@ -864,7 +869,7 @@ nav ul li a {
   }
 
   /* line 20, ../scss/_responsive.scss */
-  .regler p {
+  .tavlingen p {
     padding: 60px;
   }
 
@@ -969,7 +974,7 @@ nav ul li a {
   }
 
   /* line 104, ../scss/_responsive.scss */
-  .regler p {
+  .tavlingen p {
     padding: 60px;
   }
 
@@ -1089,7 +1094,7 @@ nav ul li a {
   }
 
   /* line 201, ../scss/_responsive.scss */
-  .regler p {
+  .tavlingen p {
     padding: 60px;
   }
 
