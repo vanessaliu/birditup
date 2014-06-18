@@ -1,4 +1,14 @@
 @import "variables";
 @import "main";
-@import "responsive";
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    @import "1024";
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    @import "768";
+}
+
+@media screen and (max-width: 480px) {
+    @import "480";
+}

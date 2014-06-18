@@ -1,0 +1,121 @@
+header {
+    .mobile-link {
+        display: block;
+        float: right;
+        width: 25%;
+    }
+    .social {
+        display: none;
+    }
+    .header-navigation {
+        display: none;
+    }
+}
+.landing {
+    background-size: auto 100%;
+}
+.mobile-social {
+    display: block;
+}
+.landing h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 40px;
+}
+p {
+    font-size: 20px;
+}
+.section p {
+        padding: 0px 50px;
+}
+.videobutton {
+    width: 400px;
+    height: 200px;
+    padding: 30px 10px;
+}
+.reglerbg {
+    margin: 20px;
+    padding: 20px;
+}
+.tavlingen p {
+    padding: 60px;
+}
+.left span,
+.right span {
+    width: 50px;
+    height: 50px;
+}
+.inspiration .carousel .carousel-control.left {
+    left: 0px;
+    span {
+         background-image: url(../img/arrow-left-small.png);
+    }
+}
+.inspiration .carousel .carousel-control.right {
+    right: 0px;
+    span {
+         background-image: url(../img/arrow-right-small.png);
+    }
+}
+.grid-image,
+#loadedImage {
+    h4,
+    .fb-like {
+        width: 200px;
+    }
+    a {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+#loadedImage {
+    padding: 10px 50px 40px 50px;
+    top: 0;
+    left: 50%;
+    margin-left: -165px;
+}
+.modal{
+    .modal-dialog {
+        width: 100%;
+        margin: 0;
+        .modal-content {
+            .modal-header {
+                padding-right: 80px;
+                h3 {
+                    font-size: 24px;
+                }
+            }
+            .modal-body {
+                .big-image,
+                .thumbnails {
+                    float: none;
+                    width: 100%;
+                }
+                .big-image {
+                    height: auto;
+                }
+                .thumbnails {
+                    width: 100%;
+                    margin: 0 auto;
+                    a {
+                        display: inline-block;
+                    }
+                    img {
+                        margin: 20px 20px 20px 0px;
+                        width: 85px;
+                        height: 85px;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer p {
+    font-size: 24px;
+}
+.footer h4 {
+    font-size: 18px;
+}

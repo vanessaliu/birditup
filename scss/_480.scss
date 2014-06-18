@@ -1,0 +1,135 @@
+header {
+    .mobile-link {
+        display: block;
+        float: right;
+        width: 25%;
+    }
+    .social {
+        display: none;
+    }
+    .header-navigation {
+        display: none;
+    }
+}
+.landing {
+    background-size: auto 100%;
+    .n-button {
+        width: 200px;
+        margin: 10px 40px;
+    }
+}
+.landing h1 {
+    font-size: 40px;
+}
+.mobile-social {
+    display: block;
+}
+h2 {
+    font-size: 30px;
+}
+p {
+    font-size: 20px;
+}
+.section p {
+        padding: 0px 50px;
+}
+.landing {
+    background-size: 1200px auto;
+}
+.videobutton {
+    width: 300px;
+    height: 200px;
+    padding: 30px 5px;
+}
+.reglerbg {
+    margin: 0px;
+    padding: 20px;
+}
+.tavlingen p {
+    padding: 60px;
+}
+.left span,
+.right span {
+    width: 50px;
+    height: 50px;
+}
+.inspiration .carousel .carousel-control.left {
+    left: 0px;
+    span {
+         background-image: url(../img/arrow-left-small.png);
+    }
+}
+.inspiration .carousel .carousel-control.right {
+    right: 0px;
+    span {
+         background-image: url(../img/arrow-right-small.png);
+    }
+}
+.grid-image,
+#loadedImage {
+    h4,
+    .fb-like {
+        width: 200px;
+    }
+    a {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+#loadedImage {
+    padding: 10px 50px 40px 50px;
+    top: 0;
+    left: 50%;
+    margin-left: -100px;
+}
+.modal{
+    .modal-dialog {
+        width: 100%;
+        margin: 0;
+        .modal-content {
+            .close {
+                top: 0;
+                right: 0;
+            }
+            .modal-header {
+                padding-right: 50px;
+                h3 {
+                    font-size: 16px;
+                }
+            }
+            .modal-body {
+                .big-image,
+                .thumbnails {
+                    float: none;
+                    width: 100%;
+                }
+                .big-image {
+                    height: auto;
+                }
+                .modal-text p {
+                    font-size: 14px;
+                }
+                .thumbnails {
+                    width: 100%;
+                    margin: 0 auto;
+                    a {
+                        display: inline-block;
+                    }
+                    img {
+                        margin: 20px 20px 20px 0px;
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer p {
+    font-size: 18px;
+}
+.footer h4 {
+    font-size: 18px;
+}

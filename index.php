@@ -8,13 +8,13 @@
     <meta name="description" content="Bird It Up! Bird it up är en inspirationssida med fågeltapeter för dig som gillar inredning. Vi anordnar tävlingar där du kan vinna snygga tapeter, självklart finns det många tapeter med fåglar att välja på." />
     <meta name="keywords" content="Bird It Up, birditup.se, Photowall, tävling, tävla, tapet, fåglar, birds, tapetsera, Medieinstitut, Instagram, inredning, Scandinavian Surface, presentkort, creativity, kreativitet, vinst, vinna" />
     <!-- FACEBOOK OG -->
-    <meta property="og:url" content="http://birditup.se" />
+    <meta property="og:url" content="http://birditup.se<?php echo $_SERVER['REQUEST_URI'] ?>" />
     <meta property="og:image" content="http://birditup.se/img/birditup.png" />
     <meta property="og:title" content="Bird It Up! Tävling" />
     <meta property="og:description" content="Tävla nu för en chans att vinna ett presentkort värde 2000 kronor hos Photowall!" />
     <meta property="og:site_name" content="Bird It Up!" />
     <!-- VIEWPORT -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
     <!-- ICON -->
     <link rel="icon" type="image/ico" href="http://birditup.se/img/logo.png" />
     <!-- STYLESHEETS -->
@@ -26,14 +26,14 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
     <!-- SCRIPTS -->
     <script type="text/javascript" src="js/vendor/instafeed.min.js"></script>
-    <script type="text/javascript" src="//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0"></script>
+    <script type="text/javascript" src="//connect.facebook.net/en_US/all.js#xfbml=1&version=v2.0&appId=275873742598083"></script>
 </head>
 
 <body>
 
-<!--[if lt IE 8]>
-           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
+    <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
     <div id="fb-root"></div>
 
@@ -89,8 +89,8 @@
                 <span class="glyphicon glyphicon-play-circle"></span>
                 <span>så här tävlar du!</span>
             </a>
-            <a href="#tavlingen" class="button">Så tävlar du</a>
-            <a href="#rosta" class="button">Tävlingsbidrag</a>
+            <a href="#tavlingen" class="button n-button">Så tävlar du</a>
+            <a href="#rosta" class="button n-button">Tävlingsbidrag</a>
     	</div>
         <!-- End Landing -->
 
@@ -201,7 +201,7 @@
                 <div id="feed"></div>
                 <div class="clearfix"></div>
                 <div id="see-more">
-                    <a href="feed.html" class="button" >Visa mer</a>
+                    <a href="./feed" class="button" >Visa mer</a>
                 </div>
             </div>
     	</div>
@@ -268,17 +268,14 @@
     <!-- End wrapper -->
 
 <div id="videoOverlay"></div>
-<div id="videoModal">
-    <iframe width="560" height="315" src="//www.youtube.com/embed/SGmMAnvb2qo" frameborder="0" allowfullscreen></iframe>
-</div>
+<div id="videoModal"></div>
 
 <!-- Modal for Instagram-images -->
 <div id="loadedOverlay"></div>
 <div id="loadedImage">
-    <div id="loadedImageClose"><p>&times;</p></div>
+    <a href="#rosta" id="loadedImageClose"><p>&times;</p></a>
     <h3>Rösta på:</h3>
     <div class="content"></div>
-    <!-- <p>Spara länken och dela på Facebook!</p> -->
 </div>
 <!-- End modal -->
 

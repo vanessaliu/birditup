@@ -119,6 +119,7 @@ a {
     margin: 40px auto 40px auto;
     padding: 80px;
     background-size: 100%;
+    overflow: hidden;
     span {
         display: block;
         padding: 10px;
@@ -268,10 +269,11 @@ nav ul li a {
     height: 100%;
     h1 {
         padding-top: 20px;
+        margin-bottom: 10px;
     }
     h2 {
         margin-top: 0;
-        font-size: 2em;
+        font-size: 1.6em;
         text-transform: none;
     }
 }
@@ -591,16 +593,16 @@ nav ul li a {
                     background-repeat: no-repeat;
             }
             &.left {
+                left: 55px;
                 span {
                     background-image: url(../img/arrow-left.png);
                 }
-                left: 55px;
             }
             &.right {
+                right: 55px;
                 span {
                     background-image: url(../img/arrow-right.png);
                 }
-                right: 55px;
             }
         }
         .carousel-control .glyphicon-chevron-left,
@@ -718,7 +720,6 @@ nav ul li a {
     width: 560px;
     left: 50%;
     z-index: 202021;
-    margin-left: -280px;
 }
 /* ========================================================================= */
 /* TOOLTIPS

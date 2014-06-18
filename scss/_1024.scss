@@ -1,0 +1,59 @@
+header {
+    .mobile-link {
+        display: block;
+    }
+    .logo,
+    .social {
+        width: 30%;
+    }
+    .header-navigation {
+        display: none;
+    }
+}
+.landing {
+    background-size: 1200px auto;
+}
+.section p {
+        padding: 0px 150px;
+}
+.tavlingen p {
+    padding: 60px;
+}
+.inspiration .carousel .carousel-control.left {
+    left: 40px;
+}
+.inspiration .carousel .carousel-control.right {
+    right: 40px;
+}
+.modal{
+    .modal-dialog {
+        width: 90%;
+        .modal-content {
+            .modal-header {
+                padding-right: 80px;
+            }
+            .modal-body {
+                .big-image,
+                .thumbnails {
+                    float: none;
+                    width: 100%;
+                }
+                .big-image {
+                    height: auto;
+                }
+                .thumbnails {
+                    width: 100%;
+                    margin: 0 auto;
+                    a {
+                        display: inline-block;
+                    }
+                    img {
+                        margin: 20px 20px 20px 0px;
+                        width: 120px;
+                        height: 120px;
+                    }
+                }
+            }
+        }
+    }
+}

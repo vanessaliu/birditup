@@ -8,13 +8,13 @@
     <meta name="description" content="Bird It Up! Bird it up är en inspirationssida med fågeltapeter för dig som gillar inredning. Vi anordnar tävlingar där du kan vinna snygga tapeter, självklart finns det många tapeter med fåglar att välja på." />
     <meta name="keywords" content="Bird It Up, birditup.se, Photowall, tävling, tävla, tapet, fåglar, birds, tapetsera, Medieinstitut, Instagram, inredning, Scandinavian Surface, presentkort, creativity, kreativitet, vinst, vinna" />
     <!-- FACEBOOK OG -->
-    <meta property="og:url" content="http://birditup.se" />
+    <meta property="og:url" content="http://birditup.se<?php echo $_SERVER['REQUEST_URI'] ?>" />
     <meta property="og:image" content="http://birditup.se/img/birditup.png" />
     <meta property="og:title" content="Bird It Up! Tävling" />
     <meta property="og:description" content="Tävla nu för en chans att vinna ett presentkort värde 2000 kronor hos Photowall!" />
     <meta property="og:site_name" content="Bird It Up!" />
     <!-- VIEWPORT -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
     <!-- ICON -->
     <link rel="icon" type="image/ico" href="http://birditup.se/img/logo.png" />
     <!-- STYLESHEETS -->
@@ -26,7 +26,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
     <!-- SCRIPTS -->
     <script type="text/javascript" src="js/vendor/instafeed.min.js"></script>
-    <script type="text/javascript" src="//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0"></script>
+    <script type="text/javascript" src="//connect.facebook.net/en_US/all.js#xfbml=1&version=v2.0&appId=275873742598083"></script>
 </head>
 
 <body>
@@ -46,7 +46,7 @@
         <header>
             <div class="header-container">
                 <div class="logo">
-                    <a href="index.html"><img src="img/headerlogo.png" alt="Bird It Up! logo"/></a>
+                    <a href="./"><img src="img/headerlogo.png" alt="Bird It Up! logo"/></a>
                 </div>
                 <div class="social">
                     <a href="http://instagram.com/birditup" class="header-social header-instagram" data-toggle="tooltip" data-placement="auto" target="_blank" title="Följ oss på Instagram!"></a>
@@ -57,11 +57,11 @@
                 <div class="header-navigation">
                     <nav>
                         <ul>
-                            <li><a href="index.html#">Hem</a></li>
-                            <li><a href="index.html#vinst">Vinst</a></li>
-                            <li><a href="index.html#tavlingen">Tävlingen</a></li>
-                            <li><a href="index.html#rosta">Rösta här</a></li>
-                            <li><a href="index.html#inspiration">Inspiration</a></li>
+                            <li><a href="./#">Hem</a></li>
+                            <li><a href="./#vinst">Vinst</a></li>
+                            <li><a href="./#tavlingen">Tävlingen</a></li>
+                            <li><a href="./#rosta">Rösta här</a></li>
+                            <li><a href="./#inspiration">Inspiration</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -69,11 +69,11 @@
         </header>
         <nav class="mobile-menu">
             <ul>
-                <li><a href="index.html#">Hem</a></li>
-                <li><a href="index.html#vinst">Vinst</a></li>
-                <li><a href="index.html#tavlingen">Tävlingen</a></li>
-                <li><a href="index.html#rosta">Rösta här</a></li>
-                <li><a href="index.html#inspiration">Inspiration</a></li>
+                <li><a href="./#">Hem</a></li>
+                <li><a href="./#vinst">Vinst</a></li>
+                <li><a href="./#tavlingen">Tävlingen</a></li>
+                <li><a href="./#rosta">Rösta här</a></li>
+                <li><a href="./#inspiration">Inspiration</a></li>
                 <li class="mobile-social">
                     <a href="http://instagram.com/birditup" target="_blank" class="header-instagram"></a>
                     <a href="http://www.facebook.com/birditup" target="_blank" class="header-facebook"></a>
@@ -101,7 +101,7 @@
 
         <!-- Footer -->
         <footer class="section container-fluid footer">
-            <a href="index.html"><img class="logo" src="img/logo.png" alt="Bird It Up!"/></a>
+            <a href="/"><img class="logo" src="img/logo.png" alt="Bird It Up!"/></a>
             <p class="footertext">bird it up! är ett projekt av studenter på <a href="http://medieinstitutet.se/" target="_blank">Medieinstitutet</a>, i samarbete med <a href="http://www.photowall.com/" target="_blank">Photowall</a>.</p>
             <a href="http://medieinstitutet.se" target="_blank"><img src="img/medieinstitutet.png" alt="Medieinstitutet"/></a>
             <a href="http://www.photowall.com/" target="_blank"><img src="img/photowall.png" alt="Photowall"/></a>
